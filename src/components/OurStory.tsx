@@ -73,12 +73,12 @@ const OurStory: React.FC = () => {
           </div>
           <div className="i1">
             <div className="img-ph">
-              <img src="/images/ourstory/2.1.webp" alt="Our Story Section 3 Image 1" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+              <img src="/images/ourstory/2.1.webp" alt="Our Story Section 3" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
             </div>
           </div>
           <div className="i2">
             <div className="img-ph">
-              <img src="/images/ourstory/2.2.webp" alt="Our Story Section 3 Image 2" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+              <img src="/images/ourstory/2.2.webp" alt="Our Story Section 3" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
             </div>
           </div>
           <div className="t2">
