@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Home",
+    "ourStory": "La nostra storia",
+    "gallery": "Galleria",
+    "blog": "Blog",
+    "whereToBuy": "Dove acquistare",
+    "cta": "Cocktail Bliss"
+  },
+  "news": {
+    "title": "Notizie & Eventi"
+  },
+  "gallery": {
+    "heroTitle": "Galleria",
+    "heroSubtitle": "Scopri la bellezza e l'artigianalità di Damascus Gin",
+    "categories": {
+      "all": "Tutto",
+      "story": "La Nostra Storia",
+      "ingredients": "Ingredienti",
+      "craft": "Artigianalità",
+      "presentation": "Presentazione"
+    },
+    "viewImage": "Visualizza Immagine"
+  },
+  "blog": {
+    "heroTitle": "Blog",
+    "heroSubtitle": "Rimani aggiornato con le ultime notizie e storie di Damascus Gin",
+    "readMore": "Leggi l'articolo completo",
+    "by": "di"
+  },
+  "buy": {
+    "heroTitle": "Dove acquistare",
+    "heroSubtitle": "Trova Damascus Gin presso rivenditori selezionati e negozi online",
+    "retailLocations": "Punti vendita",
+    "retailDesc": "Visita questi rivenditori per provare Damascus Gin di persona",
+    "onlineTitle": "Rivenditori online",
+    "onlineDesc": "Ordina Damascus Gin online e ricevilo a casa",
+    "shopOnline": "Acquista online",
+    "becomeRetailerTitle": "Diventa rivenditore",
+    "becomeRetailerDesc": "Interessato a vendere Damascus Gin nel tuo negozio? Cerchiamo partner che condividano la nostra passione per qualità e tradizione.",
+    "contactUs": "Contattaci",
+    "form": {
+      "storeName": "Nome del negozio",
+      "contactPerson": "Referente",
+      "email": "Indirizzo email",
+      "phone": "Numero di telefono",
+      "storeLocation": "Località del negozio",
+      "selectType": "Seleziona tipo di negozio",
+      "liquorStore": "Enoteca",
+      "restaurant": "Ristorante",
+      "hotel": "Hotel",
+      "specialty": "Negozio specializzato",
+      "other": "Altro",
+      "tellUs": "Parlaci del tuo negozio e perché vuoi vendere Damascus Gin",
+      "submit": "Invia richiesta"
+    },
+    "infoTitle": "Informazioni importanti",
+    "info": {
+      "ageTitle": "Verifica età",
+      "ageText": "Damascus Gin è disponibile solo ai maggiori di 18 anni. Potrebbe essere richiesto un documento valido.",
+      "shipTitle": "Spedizione",
+      "shipText": "Spediamo in tutto il mondo nella maggior parte dei paesi. Tempi e costi variano per località.",
+      "retTitle": "Resi",
+      "retText": "Per la natura del prodotto, non si accettano resi salvo danni durante la spedizione.",
+      "bulkTitle": "Ordini in grandi quantità",
+      "bulkText": "Per ordini grandi o eventi speciali, contattaci per offerte personalizzate."
+    }
+  },
+  "footer": {
+    "powered": "Powered by",
+    "brand": "Elyptek®"
+  },
+  "home": {
+    "about": {
+      "text": "Damascus Gin unisce ingredienti iconici di Siria e Libano per un gusto unico e un'esperienza memorabile. Nato dalla passione di un gruppo di amici, è distillato a Wata El Joz, Chateau Bybline, in Monte Libano."
+    },
+    "ingredients": {
+      "rose": "Rosa di Damasco: dal profumo incantevole e riconosciuta dall'UNESCO.",
+      "lemon": "Limone: dona una nota agrumata fresca e vivace.",
+      "pistachio": "Pistacchio di Aleppo: sapore ricco e tostato con un tocco di dolcezza.",
+      "juniper": "Ginepro: dalle montagne del Libano, regala le classiche note resinose."
+    },
+    "unique": {
+      "title": "PERCHÉ DAMASCUS GIN È UNICO",
+      "card1": "Gin unico grazie alla fusione di botaniche siriane e libanesi selezionate dal Master Distiller Joseph.",
+      "card2": "Qualità eccezionale a partire da ingredienti rari come Rosa di Damasco e Pistacchio di Aleppo.",
+      "card3": "Produzione artigianale: ogni bottiglia è numerata e sigillata con ceralacca in un cofanetto elegante."
+    },
+    "essence": {
+      "title": "L'essenza di Damasco",
+      "desc": "Catturiamo la vera essenza di Damasco — storia, cultura e artigianalità.",
+      "cta": "Scopri la nostra storia"
+    },
+    "symphony": {
+      "title": "Una sinfonia di sapori",
+      "desc": "Come una sinfonia perfetta, uniamo le migliori botaniche in armonia."
+    },
+    "news": {
+      "readMore": "LEGGI DI PIÙ",
+      "slide1": { "title": "Damascus Gin arriva in Giappone!", "text": "Dopo mesi di viaggio, il primo carico è arrivato in Giappone..." },
+      "slide2": { "title": "La seconda produzione è in corso!", "text": "Siamo entusiasti di annunciare che la seconda produzione è in lavorazione..." }
+    },
+    "cocktail": {
+      "title": "La nostra collezione di cocktail",
+      "desc": "Scopri le nostre ricette preferite: semplici da fare e indimenticabili!",
+      "cta": "SCOPRI I COCKTAIL"
+    },
+    "contact": {
+      "title": "Damascus Gin",
+      "subtitle": "Un gusto di Siria e Libano",
+      "desc": "Damascus Gin unisce ingredienti iconici di Siria e Libano.",
+      "formTitle": "Contattaci",
+      "email": "Email",
+      "message": "Inserisci il tuo messaggio",
+      "submit": "INVIA"
+    }
+  },
+  "ourStory": {
+    "section1": {
+      "title": "Artigianalità libanese in Damascus Gin",
+      "subtitle": "Un'amicizia globale in una bottiglia",
+      "paragraph": "Nel 2022, tre amici da diverse parti del mondo hanno unito il loro sogno. Con una profonda connessione con Damasco, gli amici hanno cercato di fondere lo spirito di questa città storica con l'autenticità e l'artigianalità dei liquori libanesi. Dopo mesi di discussioni, test e collaborazione, è nato Damascus Gin."
+    },
+    "section3": {
+      "emphasis": "Per creare l'identità di Damascus Gin, il nostro obiettivo era elaborare una miscela unica che potesse creare un'esperienza straordinaria ad ogni sorso. Infondere il gin con ingredienti esotici e naturali come la Rosa di Damasco e il Pistacchio di Aleppo gli conferisce il suo carattere unico.",
+      "detail": "Volevamo anche che il gin riflettesse la bellezza naturale e il ricco patrimonio del Medio Oriente. Ogni bottiglia onora la profonda storia di Damasco, una delle città più antiche del mondo. Combinando tradizione e innovazione, con ingredienti di origine locale e distillazione artigianale, Damascus Gin è uno spirito senza tempo e ineguagliabile."
+    }
+  }
+}
+
+

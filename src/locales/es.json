@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "ourStory": "Nuestra historia",
+    "gallery": "Galería",
+    "blog": "Blog",
+    "whereToBuy": "Dónde comprar",
+    "cta": "Cocktail Bliss"
+  },
+  "news": {
+    "title": "Noticias y Eventos"
+  },
+  "gallery": {
+    "heroTitle": "Galería",
+    "heroSubtitle": "Descubre la belleza y la artesanía detrás de Damascus Gin",
+    "categories": {
+      "all": "Todo",
+      "story": "Nuestra Historia",
+      "ingredients": "Ingredientes",
+      "craft": "Artesanía",
+      "presentation": "Presentación"
+    },
+    "viewImage": "Ver Imagen"
+  },
+  "blog": {
+    "heroTitle": "Blog",
+    "heroSubtitle": "Mantente al día con las últimas noticias e historias de Damascus Gin",
+    "readMore": "Leer artículo completo",
+    "by": "por"
+  },
+  "buy": {
+    "heroTitle": "Dónde comprar",
+    "heroSubtitle": "Encuentra Damascus Gin en tiendas seleccionadas y en línea",
+    "retailLocations": "Tiendas",
+    "retailDesc": "Visita estas tiendas para experimentar Damascus Gin en persona",
+    "onlineTitle": "Tiendas en línea",
+    "onlineDesc": "Pide Damascus Gin en línea y recíbelo en tu puerta",
+    "shopOnline": "Comprar en línea",
+    "becomeRetailerTitle": "Conviértete en distribuidor",
+    "becomeRetailerDesc": "¿Quieres vender Damascus Gin? Buscamos socios que compartan nuestra pasión por la calidad y la tradición.",
+    "contactUs": "Contáctanos",
+    "form": {
+      "storeName": "Nombre de la tienda",
+      "contactPerson": "Persona de contacto",
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "storeLocation": "Ubicación de la tienda",
+      "selectType": "Selecciona el tipo de tienda",
+      "liquorStore": "Licorería",
+      "restaurant": "Restaurante",
+      "hotel": "Hotel",
+      "specialty": "Tienda especializada",
+      "other": "Otro",
+      "tellUs": "Cuéntanos sobre tu tienda y por qué deseas vender Damascus Gin",
+      "submit": "Enviar solicitud"
+    },
+    "infoTitle": "Información importante",
+    "info": {
+      "ageTitle": "Verificación de edad",
+      "ageText": "Damascus Gin solo está disponible para mayores de 18 años. Se puede requerir identificación válida.",
+      "shipTitle": "Envío",
+      "shipText": "Realizamos envíos a la mayoría de países. Los tiempos y costos varían por ubicación.",
+      "retTitle": "Devoluciones",
+      "retText": "Por la naturaleza del producto, no aceptamos devoluciones a menos que el producto llegue dañado.",
+      "bulkTitle": "Pedidos al por mayor",
+      "bulkText": "Para pedidos grandes o eventos especiales, contáctanos para precios personalizados."
+    }
+  },
+  "footer": {
+    "powered": "Desarrollado por",
+    "brand": "Elyptek®"
+  },
+  "home": {
+    "about": {
+      "text": "Damascus Gin combina ingredientes icónicos de Siria y Líbano para un sabor único y una experiencia inolvidable. Nacido de la pasión de un grupo de amigos, se destila en Wata El Joz, Chateau Bybline, en el Monte Líbano."
+    },
+    "ingredients": {
+      "rose": "Rosa de Damasco: fragancia encantadora, reconocida por la UNESCO.",
+      "lemon": "Limón: aporta una nota cítrica fresca y viva.",
+      "pistachio": "Pistacho de Alepo: sabor rico y tostado con un toque dulce.",
+      "juniper": "Enebro: de las montañas del Líbano, ofrece notas clásicas de pino."
+    },
+    "unique": {
+      "title": "POR QUÉ DAMASCUS GIN ES ÚNICO",
+      "card1": "Un gin único por la fusión de botánicos sirios y libaneses seleccionados por el maestro destilador Joseph.",
+      "card2": "Calidad excepcional con ingredientes raros como Rosa de Damasco y Pistacho de Alepo.",
+      "card3": "Producción artesanal: cada botella numerada y sellada con cera en un estuche elegante."
+    },
+    "essence": {
+      "title": "La esencia de Damasco",
+      "desc": "Capturamos la esencia de Damasco — historia, cultura y artesanía.",
+      "cta": "Conoce nuestra historia"
+    },
+    "symphony": {
+      "title": "Una sinfonía de sabores",
+      "desc": "Como una sinfonía perfecta, unimos las mejores botánicas en armonía."
+    },
+    "news": {
+      "readMore": "LEER MÁS",
+      "slide1": { "title": "¡Damascus Gin llega a Japón!", "text": "Tras meses de viaje, el primer envío llegó a Japón..." },
+      "slide2": { "title": "¡La segunda producción está en marcha!", "text": "Nos complace anunciar que la segunda producción ya está en proceso..." }
+    },
+    "cocktail": {
+      "title": "Nuestra colección de cócteles",
+      "desc": "Explora nuestras recetas favoritas: ¡fáciles de preparar e inolvidables!",
+      "cta": "DESCUBRIR CÓCTELES"
+    },
+    "contact": {
+      "title": "Damascus Gin",
+      "subtitle": "Un sabor de Siria y Líbano",
+      "desc": "Damascus Gin combina ingredientes icónicos de Siria y Líbano.",
+      "formTitle": "Contáctanos",
+      "email": "Correo electrónico",
+      "message": "Escribe tu mensaje",
+      "submit": "ENVIAR"
+    }
+  },
+  "ourStory": {
+    "section1": {
+      "title": "Artesanía libanesa en Damascus Gin",
+      "subtitle": "Una amistad global en una botella",
+      "paragraph": "En 2022, tres amigos de diferentes partes del mundo unieron su sueño. Con una profunda conexión con Damasco, los amigos buscaron mezclar el espíritu de esta ciudad histórica con la autenticidad y artesanía de los licores libaneses. Después de meses de discusiones, pruebas y colaboración, nació Damascus Gin."
+    },
+    "section3": {
+      "emphasis": "Para crear la identidad de Damascus Gin, nuestro objetivo era elaborar una mezcla única que pudiera crear una experiencia extraordinaria con cada sorbo. Infundir el gin con ingredientes exóticos y naturales como la Rosa de Damasco y el Pistacho de Alepo le da su carácter único.",
+      "detail": "También queríamos que el gin reflejara la belleza natural y el rico patrimonio de Oriente Medio. Cada botella honra la profunda historia de Damasco, una de las ciudades más antiguas del mundo. Combinando tradición e innovación, con ingredientes de origen local y destilación artesanal, Damascus Gin es un espíritu atemporal e inigualable."
+    }
+  }
+}
+
+
