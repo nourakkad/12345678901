@@ -5,7 +5,6 @@ import { getLangFromPath, t } from '../utils/i18n';
 const Gallery: React.FC = () => {
   const lang = getLangFromPath(window.location.pathname);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [currentCategory, setCurrentCategory] = useState<string>('all');
 
   const galleryData = [
     {
@@ -73,20 +72,6 @@ const Gallery: React.FC = () => {
     }
   ];
 
-  const categories = [
-    { id: 'all', name: 'All' },
-    { id: 'bottles', name: 'Bottles' },
-    { id: 'process', name: 'Process' },
-    { id: 'ingredients', name: 'Ingredients' },
-    { id: 'cocktails', name: 'Cocktails' },
-    { id: 'facility', name: 'Facility' },
-    { id: 'events', name: 'Events' }
-  ];
-
-  const filteredGallery = currentCategory === 'all' 
-    ? galleryData 
-    : galleryData.filter(item => item.category === currentCategory);
-
   const openModal = (image: string) => {
     setSelectedImage(image);
   };
@@ -124,7 +109,7 @@ const Gallery: React.FC = () => {
       <div className="container">
         <section className="gallery-section">
           <div className="gallery-grid">
-            {filteredGallery.map((item) => (
+            {galleryData.map((item) => (
               <div key={item.id} className="gallery-item" onClick={() => openModal(item.image)}>
                 <img 
                   src={item.image} 
