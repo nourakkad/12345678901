@@ -11,64 +11,50 @@ const Gallery: React.FC = () => {
       id: 1,
       title: 'Damascus Gin Bottle',
       description: 'Our signature gin bottle featuring traditional Middle Eastern design elements',
-      image: '/images/gallery/gallery-1.jpg',
+      image: '/images/gallery/Untitled-110.webp',
       category: 'bottles'
     },
     {
       id: 2,
       title: 'Craft Distillation Process',
       description: 'Behind the scenes of our traditional distillation methods',
-      image: '/images/gallery/gallery-2.jpg',
+      image: '/images/gallery/Untitled16.webp',
       category: 'process'
     },
     {
       id: 3,
       title: 'Botanical Selection',
       description: 'Carefully selected botanicals from the Mediterranean region',
-      image: '/images/gallery/gallery-3.jpg',
+      image: '/images/gallery/Untitled-9.webp',
       category: 'ingredients'
     },
     {
       id: 4,
-      title: 'Damascus Gin Cocktail',
-      description: 'Perfect gin and tonic with our signature spirit',
-      image: '/images/gallery/gallery-4.jpg',
-      category: 'cocktails'
+      title: 'Damascus Gin Ingredients',
+      description: 'Premium ingredients and botanicals used in our distillation process',
+      image: '/images/gallery/2.webp',
+      category: 'ingredients'
     },
     {
       id: 5,
-      title: 'Distillery Interior',
-      description: 'Our state-of-the-art distillery facility',
-      image: '/images/gallery/gallery-5.jpg',
-      category: 'facility'
+      title: 'Distillation Process',
+      description: 'Traditional craftsmanship in our distillation facility',
+      image: '/images/gallery/3.webp',
+      category: 'process'
     },
     {
       id: 6,
-      title: 'Gin Tasting Experience',
-      description: 'Professional tasting sessions with our master distiller',
-      image: '/images/gallery/gallery-6.jpg',
-      category: 'events'
-    },
-    {
-      id: 7,
-      title: 'Damascus Gin Limited Edition',
-      description: 'Special limited edition releases with unique packaging',
-      image: '/images/gallery/gallery-7.jpg',
+      title: 'Damascus Gin Presentation',
+      description: 'Elegant presentation and packaging of our signature gin',
+      image: '/images/gallery/6.webp',
       category: 'bottles'
     },
     {
-      id: 8,
-      title: 'Cocktail Masterclass',
-      description: 'Learn to create perfect cocktails with Damascus Gin',
-      image: '/images/gallery/gallery-8.jpg',
-      category: 'events'
-    },
-    {
-      id: 9,
-      title: 'Botanical Garden',
-      description: 'Our botanical garden where we grow select ingredients',
-      image: '/images/gallery/gallery-9.jpg',
-      category: 'ingredients'
+      id: 7,
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
+      image: '/images/gallery/1 (1).webp',
+      category: 'experience'
     }
   ];
 
@@ -116,7 +102,7 @@ const Gallery: React.FC = () => {
                   alt={item.title}
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = '/images/gallery/placeholder.jpg';
+                    target.src = '/images/damascus-gin-logo.png';
                   }}
                 />
                 <div className="gallery-item-overlay">
