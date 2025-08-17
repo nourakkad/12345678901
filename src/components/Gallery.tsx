@@ -1,94 +1,102 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState, useCallback } from 'react';
 import './Gallery.css';
-import { t, getLangFromPath } from '../utils/i18n';
+import { getLangFromPath, t } from '../utils/i18n';
 
 const Gallery: React.FC = () => {
-  const [selectedImage, setSelectedImage] = useState<number | null>(null);
-  const [lang, setLang] = useState<string>('en');
-  const location = useLocation();
+  const lang = getLangFromPath(window.location.pathname);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [currentCategory, setCurrentCategory] = useState<string>('all');
 
-  useEffect(() => {
-    const current = getLangFromPath(location.pathname, 'en');
-    setLang(current);
-  }, [location.pathname]);
-
-  const galleryImages = [
+  const galleryData = [
     {
       id: 1,
-      src: '/images/gallery/Untitled-110.webp',
-      alt: 'Damascus Gin Bottle Close-up',
       title: 'Damascus Gin Bottle',
-      category: 'presentation',
-      description: 'Our signature bottle in all its glory'
+      description: 'Our signature gin bottle featuring traditional Middle Eastern design elements',
+      image: '/images/gallery/gallery-1.jpg',
+      category: 'bottles'
     },
     {
       id: 2,
-      src: '/images/gallery/Untitled16.webp',
-      alt: 'Damascus Gin Production',
-      title: 'Production Process',
-      category: 'craft',
-      description: 'Behind the scenes of our craft'
+      title: 'Craft Distillation Process',
+      description: 'Behind the scenes of our traditional distillation methods',
+      image: '/images/gallery/gallery-2.jpg',
+      category: 'process'
     },
     {
       id: 3,
-      src: '/images/gallery/Untitled-9.webp',
-      alt: 'Damascus Rose Flowers',
-      title: 'Damascus Rose',
-      category: 'ingredients',
-      description: 'The essence of our gin'
+      title: 'Botanical Selection',
+      description: 'Carefully selected botanicals from the Mediterranean region',
+      image: '/images/gallery/gallery-3.jpg',
+      category: 'ingredients'
     },
     {
       id: 4,
-      src: '/images/gallery/2.webp',
-      alt: 'Damascus Gin Ingredients',
-      title: 'Premium Ingredients',
-      category: 'ingredients',
-      description: 'Carefully selected botanicals'
+      title: 'Damascus Gin Cocktail',
+      description: 'Perfect gin and tonic with our signature spirit',
+      image: '/images/gallery/gallery-4.jpg',
+      category: 'cocktails'
     },
     {
       id: 5,
-      src: '/images/gallery/3.webp',
-      alt: 'Damascus Gin Distillation',
-      title: 'Distillation Process',
-      category: 'craft',
-      description: 'Traditional craftsmanship'
+      title: 'Distillery Interior',
+      description: 'Our state-of-the-art distillery facility',
+      image: '/images/gallery/gallery-5.jpg',
+      category: 'facility'
     },
     {
       id: 6,
-      src: '/images/gallery/6.webp',
-      alt: 'Damascus Gin Presentation',
-      title: 'Damascus Gin Presentation',
-      category: 'presentation',
-      description: 'Elegant presentation and packaging'
+      title: 'Gin Tasting Experience',
+      description: 'Professional tasting sessions with our master distiller',
+      image: '/images/gallery/gallery-6.jpg',
+      category: 'events'
     },
     {
       id: 7,
-      src: '/images/gallery/1 (1).webp',
-      alt: 'Damascus Gin Experience',
-      title: 'Damascus Gin Experience',
-      category: 'presentation',
-      description: 'The complete Damascus Gin experience'
+      title: 'Damascus Gin Limited Edition',
+      description: 'Special limited edition releases with unique packaging',
+      image: '/images/gallery/gallery-7.jpg',
+      category: 'bottles'
+    },
+    {
+      id: 8,
+      title: 'Cocktail Masterclass',
+      description: 'Learn to create perfect cocktails with Damascus Gin',
+      image: '/images/gallery/gallery-8.jpg',
+      category: 'events'
+    },
+    {
+      id: 9,
+      title: 'Botanical Garden',
+      description: 'Our botanical garden where we grow select ingredients',
+      image: '/images/gallery/gallery-9.jpg',
+      category: 'ingredients'
     }
   ];
 
-  const openModal = (id: number) => {
-    setSelectedImage(id);
-    document.body.style.overflow = 'hidden';
+  const categories = [
+    { id: 'all', name: 'All' },
+    { id: 'bottles', name: 'Bottles' },
+    { id: 'process', name: 'Process' },
+    { id: 'ingredients', name: 'Ingredients' },
+    { id: 'cocktails', name: 'Cocktails' },
+    { id: 'facility', name: 'Facility' },
+    { id: 'events', name: 'Events' }
+  ];
+
+  const filteredGallery = currentCategory === 'all' 
+    ? galleryData 
+    : galleryData.filter(item => item.category === currentCategory);
+
+  const openModal = (image: string) => {
+    setSelectedImage(image);
   };
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setSelectedImage(null);
-    document.body.style.overflow = 'unset';
-  };
+  }, []);
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Escape') {
-      closeModal();
-    }
-  };
-
-  useEffect(() => {
+  // Add keyboard event listener for ESC key
+  React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         closeModal();
@@ -106,63 +114,42 @@ const Gallery: React.FC = () => {
         <div className="container-grid">
           <div className="corners">
             <div className="text-content">
-              <h2 className="title">{t(lang as any, 'gallery.heroTitle')}</h2>
-              <h3 className="subtitle">{t(lang as any, 'gallery.heroSubtitle')}</h3>
+              <h2 className="title">{t(lang, 'gallery.heroTitle')}</h2>
+              <h3 className="subtitle">{t(lang, 'gallery.heroSubtitle')}</h3>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Gallery Grid */}
-      <section className="gallery-grid-section">
-        <div className="container">
+      <div className="container">
+        <section className="gallery-section">
           <div className="gallery-grid">
-            {galleryImages.map((image, index) => (
-              <div 
-                key={image.id} 
-                className="gallery-item"
-                onClick={() => openModal(image.id)}
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="image-container">
-                  <img 
-                    src={image.src} 
-                    alt={image.alt}
-                    loading="lazy"
-                  />
-                  <div className="image-overlay">
-                    <div className="overlay-content">
-                      <h3>{image.title}</h3>
-                      <p>{image.description}</p>
-                      <span className="view-btn">{t(lang as any, 'gallery.viewImage')}</span>
-                    </div>
-                  </div>
+            {filteredGallery.map((item) => (
+              <div key={item.id} className="gallery-item" onClick={() => openModal(item.image)}>
+                <img 
+                  src={item.image} 
+                  alt={item.title}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = '/images/gallery/placeholder.jpg';
+                  }}
+                />
+                <div className="gallery-item-overlay">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Modal */}
       {selectedImage && (
-        <div className="modal-overlay" onClick={closeModal}>
+        <div className="modal" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={closeModal}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
-            <div className="modal-image">
-              <img 
-                src={galleryImages.find(img => img.id === selectedImage)?.src} 
-                alt={galleryImages.find(img => img.id === selectedImage)?.alt}
-              />
-            </div>
-            <div className="modal-info">
-              <h3>{galleryImages.find(img => img.id === selectedImage)?.title}</h3>
-              <p>{galleryImages.find(img => img.id === selectedImage)?.description}</p>
-            </div>
+            <button className="modal-close" onClick={closeModal}>×</button>
+            <img src={selectedImage} alt="Gallery" />
           </div>
         </div>
       )}
