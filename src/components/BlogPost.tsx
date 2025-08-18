@@ -15,11 +15,7 @@ interface BlogPostData {
   readTime: string;
 }
 
-// Consolidate static posts outside effects to avoid dependencies warnings
-const blogPosts: BlogPostData[] = [
-  // Keeping first two as examples; rest unchanged below
-  // The full list remains defined later in the file
-];
+// Consolidate static posts inside component; see full list below
 
 const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -28,6 +24,7 @@ const BlogPost: React.FC = () => {
   const [post, setPost] = useState<BlogPostData | null>(null);
   const lang = getLangFromPath(location.pathname, 'en');
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (id) {
       const postData = blogPosts.find((p) => p.id === parseInt(id, 10));
