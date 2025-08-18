@@ -100,6 +100,8 @@ const Gallery: React.FC = () => {
                 <img 
                   src={item.image} 
                   alt={item.title}
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = '/images/damascus-gin-logo.png';

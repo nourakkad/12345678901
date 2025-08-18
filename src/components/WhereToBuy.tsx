@@ -143,7 +143,7 @@ const WhereToBuy: React.FC = () => {
                       <h3 className="retailer-name">{retailer.name}</h3>
                       <span className={`retailer-type ${retailer.isOnline ? 'online-badge' : ''}`}>
                         {retailer.isOnline && '🌐 '}
-                        {retailer.type}
+                        {t(lang, `buy.retailers.${retailer.id}.type`) || retailer.type}
                       </span>
                     </div>
                     
@@ -153,7 +153,7 @@ const WhereToBuy: React.FC = () => {
                       </div>
                       <div className="location-details">
                         <strong>{retailer.location}</strong>
-                        <p className="address">{retailer.address}</p>
+                        <p className="address">{retailer.isOnline ? t(lang, 'buy.online.address') : retailer.address}</p>
                       </div>
                     </div>
 
@@ -180,14 +180,14 @@ const WhereToBuy: React.FC = () => {
                         {renderStars(retailer.rating)}
                       </div>
                       <span className="rating-text">
-                        {retailer.rating} out of 5 stars
+                        {retailer.rating} {t(lang, 'buy.rating.outOf')}
                       </span>
                       <span className="reviews-count">
-                        ({retailer.reviews} reviews)
+                        ({retailer.reviews} {t(lang, 'buy.rating.reviews')})
                       </span>
                     </div>
                     
-                    <p className="retailer-description">{retailer.description}</p>
+                    <p className="retailer-description">{t(lang, `buy.retailers.${retailer.id}.description`) || retailer.description}</p>
                     
                     <div className="retailer-actions">
                       {retailer.isOnline ? (
@@ -195,7 +195,7 @@ const WhereToBuy: React.FC = () => {
                           className="shop-online-btn"
                           onClick={() => openWebsite(retailer.websiteUrl!)}
                         >
-                          Shop Online
+                          {t(lang, 'buy.buttons.shopOnline')}
                         </button>
                       ) : (
                         <>
@@ -203,13 +203,13 @@ const WhereToBuy: React.FC = () => {
                             className="view-map-btn"
                             onClick={() => openGoogleMaps(retailer.googleMapsUrl!)}
                           >
-                            View on Google Maps
+                            {t(lang, 'buy.buttons.viewOnMaps')}
                           </button>
                           <button 
                             className="call-btn"
                             onClick={() => callPhone(retailer.phone)}
                           >
-                            Call Now
+                            {t(lang, 'buy.buttons.callNow')}
                           </button>
                         </>
                       )}
@@ -220,6 +220,8 @@ const WhereToBuy: React.FC = () => {
                     <img 
                       src={retailer.image} 
                       alt={`${retailer.name} ${retailer.isOnline ? 'website' : 'store interior'}`}
+                      loading="lazy"
+                      decoding="async"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = '/images/retailers/store-placeholder.jpg';

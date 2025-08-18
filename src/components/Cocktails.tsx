@@ -111,6 +111,8 @@ const Cocktails: React.FC = () => {
               <img 
                 src="https://midnightblue-ram-449596.hostingersite.com/wp-content/uploads/2024/10/Untitled13.jpg" 
                 alt="Damascus Gin feature"
+                loading="lazy"
+                decoding="async"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.src = '/images/damascus-gin-logo.png';
@@ -174,6 +176,8 @@ const Cocktails: React.FC = () => {
                 <img 
                   src="https://midnightblue-ram-449596.hostingersite.com/wp-content/uploads/2024/10/Untitled-5.jpg" 
                   alt="Damascus Dream Cocktail"
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = '/images/damascus-gin-logo.png';
@@ -236,6 +240,8 @@ const Cocktails: React.FC = () => {
                 <img 
                   src="https://midnightblue-ram-449596.hostingersite.com/wp-content/uploads/2024/10/Untitled-6.jpg" 
                   alt="Damascus Gin Mojito"
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = '/images/damascus-gin-logo.png';
@@ -298,6 +304,8 @@ const Cocktails: React.FC = () => {
                 <img 
                   src="https://midnightblue-ram-449596.hostingersite.com/wp-content/uploads/2024/10/Untitled-7.jpg" 
                   alt="The Sultan's Spritz"
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = '/images/damascus-gin-logo.png';
@@ -360,6 +368,8 @@ const Cocktails: React.FC = () => {
                 <img 
                   src="https://midnightblue-ram-449596.hostingersite.com/wp-content/uploads/2024/10/Untitled-8.jpg" 
                   alt="Oasis Breeze"
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = '/images/damascus-gin-logo.png';

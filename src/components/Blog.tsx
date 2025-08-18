@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './Blog.css';
-import { getLangFromPath, t } from '../utils/i18n';
+import { getLangFromPath, t, Lang } from '../utils/i18n';
 
 const Blog: React.FC = () => {
-  const lang = getLangFromPath(window.location.pathname);
+  const location = useLocation();
+  const [lang, setLang] = useState<Lang>(getLangFromPath(location.pathname));
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setLang(getLangFromPath(location.pathname));
+  }, [location.pathname]);
 
   // News data from Home component
   const newsData = [
@@ -98,6 +103,8 @@ const Blog: React.FC = () => {
                   <img 
                     src={post.image} 
                     alt={post.title}
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = '/images/news/news-placeholder.jpg';
@@ -106,16 +113,16 @@ const Blog: React.FC = () => {
                 </div>
                 <div className="news-content">
                   <div className="news-meta">
-                    <span className="news-category">{post.category}</span>
+                    <span className="news-category">{t(lang as Lang, `blog.posts.${post.id}.category`)}</span>
                     <span className="news-date">{new Date(post.date).toLocaleDateString()}</span>
                   </div>
-                  <h3 className="news-title">{post.title}</h3>
-                  <p className="news-excerpt">{post.excerpt}</p>
+                  <h3 className="news-title">{t(lang as Lang, `blog.posts.${post.id}.title`)}</h3>
+                  <p className="news-excerpt">{t(lang as Lang, `blog.posts.${post.id}.excerpt`)}</p>
                   <button 
                     className="read-more-btn"
                     onClick={() => handleReadMore(post.id)}
                   >
-                    Read More
+                    {t(lang as Lang, 'blog.readMoreBtn')}
                   </button>
                 </div>
               </article>
@@ -130,7 +137,7 @@ const Blog: React.FC = () => {
                 onClick={() => handlePageChange(currentPage - 1)}
                 disabled={currentPage === 1}
               >
-                Previous
+                {t(lang as Lang, 'blog.prev')}
               </button>
               
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
@@ -148,7 +155,7 @@ const Blog: React.FC = () => {
                 onClick={() => handlePageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
               >
-                Next
+                {t(lang as Lang, 'blog.next')}
               </button>
             </div>
           )}

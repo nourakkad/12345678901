@@ -37,6 +37,7 @@ const Home: React.FC = () => {
 
   // News carousel state
   const [newsIndex, setNewsIndex] = useState(0);
+  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(() => (typeof window !== 'undefined' ? window.innerWidth < 900 : false));
   const newsSlides = [
     {
       image: '/images/news/news-1.jpg',
@@ -59,6 +60,13 @@ const Home: React.FC = () => {
   const cocktailCardRef = useRef<HTMLDivElement>(null);
   const contactInfoRef = useRef<HTMLDivElement>(null);
   const contactFormRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleResize = () => setIsSmallScreen(window.innerWidth < 900);
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -298,7 +306,7 @@ const Home: React.FC = () => {
             aria-label="Previous News"
             style={{
               position: 'absolute',
-              left: '-48px',
+              left: isSmallScreen ? '8px' : '-48px',
               top: '50%',
               transform: 'translateY(-50%)',
               zIndex: 2
@@ -309,6 +317,8 @@ const Home: React.FC = () => {
               <img 
                 src={newsSlides[newsIndex].image}
                 alt="News"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="news-card-text" ref={newsTextRef}>
@@ -323,7 +333,7 @@ const Home: React.FC = () => {
             aria-label="Next News"
             style={{
               position: 'absolute',
-              right: '-48px',
+              right: isSmallScreen ? '8px' : '-48px',
               top: '50%',
               transform: 'translateY(-50%)',
               zIndex: 2

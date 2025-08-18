@@ -26,7 +26,27 @@
     "heroTitle": "Blog",
     "heroSubtitle": "Rimani aggiornato con le ultime notizie e storie di Damascus Gin",
     "readMore": "Leggi l'articolo completo",
-    "by": "di"
+    "by": "di",
+    "readMoreBtn": "Leggi di più",
+    "prev": "Precedente",
+    "next": "Successivo",
+    "backToBlog": "Torna al blog",
+    "posts": {
+      "1": { "title": "Damascus Gin vince l'oro", "excerpt": "Il nostro gin è stato riconosciuto per qualità e profilo aromatico eccezionali.", "category": "Premi" },
+      "2": { "title": "L'arte del gin artigianale: dietro le quinte", "excerpt": "Scopri il processo meticoloso dietro il nostro gin, dalla scelta dei botanici alla distillazione.", "category": "Produzione" },
+      "3": { "title": "Edizione limitata stagionale: Winter Spice", "excerpt": "Scopri il calore dell'inverno con la nostra edizione speciale alle spezie.", "category": "Nuovi prodotti" },
+      "4": { "title": "Distillazione sostenibile: il nostro impegno", "excerpt": "Le nostre pratiche ecologiche e l'impegno verso la sostenibilità.", "category": "Sostenibilità" },
+      "5": { "title": "Masterclass: Gin & Tonic perfetto", "excerpt": "Unisciti al nostro master distiller per preparare il G&T perfetto.", "category": "Eventi" },
+      "6": { "title": "Storia del gin nel Levante", "excerpt": "La ricca storia del gin in Medio Oriente e il nostro percorso.", "category": "Storia" }
+    },
+    "details": {
+      "1": { "author": "Team Damascus Gin", "readTime": "5 min", "content": "<p>Siamo lieti di annunciare che Damascus Gin ha ottenuto la prestigiosa Medaglia d’Oro all’International Spirits Competition, una delle competizioni più autorevoli al mondo. Un riconoscimento che premia la nostra artigianalità meticolosa e l’uso di botaniche mediterranee selezionate.</p><h2>La competizione</h2><p>L’International Spirits Competition riunisce ogni anno i migliori produttori di distillati da oltre 90 paesi. La giuria — composta da esperti del settore e master distiller — valuta aroma, gusto, persistenza e qualità complessiva.</p><h2>Cosa rende speciale Damascus Gin</h2><p>Una miscela unica di botaniche racconta l’eredità del Levante:</p><ul><li><strong>Ginepro:</strong> dalle montagne del Libano, spina dorsale classica del gin</li><li><strong>Rosa di Damasco:</strong> aggiunge complessità floreale e identità</li><li><strong>Cardamomo e agrumi:</strong> calore e brillantezza</li><li><strong>Radice di angelica:</strong> profondità erbacea e funzione di fissativo naturale</li></ul><h2>La distillazione</h2><p>Alambicchi in rame tradizionali, ritmi lenti e controlli rigorosi per favorire lo sviluppo di profumi e sapori delicati. Ogni lotto è piccolo per garantire coerenza e qualità.</p><h2>Guardando avanti</h2><p>Questo traguardo ci motiva a spingere ancora di più l’artigianalità del gin: qualità, ricerca su nuove botaniche, rispetto per i metodi tradizionali e condivisione dell’eredità del Levante.</p>" },
+      "2": { "author": "Master Distiller", "readTime": "7 min", "content": "<p>Benvenuti nella nostra distilleria, dove tradizione e innovazione si incontrano.</p><h2>Selezione dei botanici</h2><p>Ogni ingrediente è scelto con cura: raccolte stagionali, test di qualità, forniture sostenibili e saperi tramandati.</p><h2>Distillazione</h2><p>Macerazione mirata, alambicchi in rame e tagli precisi per catturare il cuore del distillato. Ogni lotto richiede circa 6–8 ore.</p><h2>Controllo qualità</h2><p>Panel di assaggio, analisi di coerenza e approvazione finale del master distiller.</p><h2>Il fattore umano</h2><p>Strumenti moderni e sensibilità artigianale: l’esperienza guida ogni decisione per uno standard sempre elevato.</p>" },
+      "3": { "author": "Team Prodotto", "readTime": "6 min", "content": "<p>Presentiamo <strong>Winter Spice</strong>, l’edizione limitata che racchiude il calore dell’inverno con spezie avvolgenti e tocchi agrumati.</p><h2>Ispirazione</h2><p>L’inverno medio-orientale porta profumi speziati e convivialità: questo gin ne cattura l’atmosfera.</p><h2>Botaniche uniche</h2><ul><li><strong>Cannella</strong> per calore e dolcezza</li><li><strong>Chiodi di garofano</strong> per profondità aromatica</li><li><strong>Noce moscata</strong> per note morbide</li><li><strong>Anice stellato</strong> per un tocco di liquirizia</li><li><strong>Scorza d’arancia</strong> per brillantezza</li></ul><h2>Note di degustazione</h2><ul><li><strong>Naso:</strong> ginepro, cannella e chiodi</li><li><strong>Bocca:</strong> strati di spezie e agrumi</li><li><strong>Finale:</strong> lungo e caldo</li></ul><h2>Cocktail invernali</h2><p>Perfetto per G&T speziati, Negroni stagionali e Mule invernali.</p>" },
+      "4": { "author": "Team Ambiente", "readTime": "8 min", "content": "<p>Per noi eccellenza e responsabilità ambientale procedono insieme. La sostenibilità guida ogni fase: dalla scelta di fornitori locali e pratiche organiche fino all’efficienza energetica e all’uso consapevole dell’acqua.</p><h2>Filosofia</h2><p>La qualità del gin è legata alla salute dell’ambiente: proteggiamo le risorse con scelte responsabili.</p><h2>Energia ed acqua</h2><ul><li>Pannelli solari ed equipaggiamenti efficienti</li><li>Recupero di calore</li><li>Sistemi di ricircolo idrico</li></ul><h2>Rifiuti e carbonio</h2><ul><li>Compost dei botanici esausti</li><li>Vetro riciclato</li><li>Imballi ottimizzati</li><li>Compensazioni e logistica a basse emissioni</li></ul><h2>Comunità</h2><p>Programmi educativi, sostegno a iniziative locali e trasparenza nei report ambientali.</p>" },
+      "5": { "author": "Master Distiller", "readTime": "10 min", "content": "<p>Il <strong>Gin & Tonic</strong> perfetto nasce da ingredienti eccellenti, rapporto 1:2 e ghiaccio grande e limpido.</p><h2>Ingredienti</h2><ul><li>Gin Damascus</li><li>Tonica premium</li><li>Ghiaccio di qualità</li><li>Guarnizioni fresche</li></ul><h2>Metodo</h2><ol><li>Calice a ballon raffreddato</li><li>Ghiaccio abbondante</li><li>50 ml gin + 100 ml tonica versata sul bordo</li><li>Guarnizione a scelta (agrumi/erbe/spezie)</li></ol><h2>Consigli</h2><ul><li>Refrigerare gin e tonica</li><li>Mescolare delicatamente</li><li>Valorizzare l’aroma posizionando la guarnizione in superficie</li></ul>" },
+      "6": { "author": "Storico culturale", "readTime": "12 min", "content": "<p>La storia del gin nel Levante attraversa secoli e culture.</p><h2>Origini</h2><p>Uso medicinale del ginepro e preparazioni tradizionali con erbe locali.</p><h2>Influenze</h2><p>Scambi olandesi e ottomani nel XVII secolo; in seguito, stili London Dry introdotti dai britannici e reinterpretati con botaniche regionali.</p><h2>Rinascita</h2><p>Oggi Damascus Gin unisce tecniche antiche e standard qualitativi moderni, celebrando un patrimonio unico.</p>" }
+    }
   },
   "cocktails": {
     "heroTitle": "Cocktail Bliss",
@@ -137,7 +157,18 @@
     "heroTitle": "Dove acquistare",
     "heroSubtitle": "Trova Damascus Gin presso rivenditori selezionati e negozi online",
     "retailLocations": "Punti vendita",
-    "retailDesc": "Visita questi rivenditori per provare Damascus Gin di persona",
+    "retailDesc": "Visita questi rivenditori selezionati per provare Damascus Gin",
+    "online": { "address": "Negozio online" },
+    "rating": { "outOf": "su 5 stelle", "reviews": "recensioni" },
+    "buttons": { "shopOnline": "Acquista online", "viewOnMaps": "Vedi su Google Maps", "callNow": "Chiama ora" },
+    "retailers": {
+      "1": { "type": "Enoteca di distillati premium", "description": "Rivenditore esclusivo di distillati premium, incluso Damascus Gin. Scopri una selezione curata di spiriti e gin artigianali." },
+      "2": { "type": "Vini e distillati", "description": "Enoteca premium con Damascus Gin. Scopri la nostra selezione di vini e spirits artigianali." },
+      "3": { "type": "Enoteca di distillati premium", "description": "Rivenditore di distillati premium con Damascus Gin. Scopri la nostra selezione di spirits e gin artigianali." },
+      "4": { "type": "Enoteca di distillati premium", "description": "Rivenditore di distillati premium a Gemmayzeh con Damascus Gin. Scopri la nostra selezione di spirits e gin artigianali." },
+      "5": { "type": "Vini e distillati", "description": "Enoteca a Broummana con Damascus Gin. Scopri una selezione curata di vini e spirits." },
+      "6": { "type": "Negozio online di vini e distillati", "description": "Rivenditore online specializzato in vini, distillati e artigianato del Levante. Spedizioni internazionali di Damascus Gin e altro." }
+    },
     "onlineTitle": "Rivenditori online",
     "onlineDesc": "Ordina Damascus Gin online e ricevilo a casa",
     "shopOnline": "Acquista online",

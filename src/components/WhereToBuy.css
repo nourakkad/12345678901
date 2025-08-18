@@ -84,7 +84,7 @@
 
 .retailers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
@@ -114,8 +114,8 @@
 
 .retailer-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 300px;
+  grid-template-columns: 1.2fr 0.8fr;
+  min-height: 280px;
 }
 
 .retailer-info {
@@ -318,6 +318,7 @@
 .retailer-image {
   position: relative;
   overflow: hidden;
+  min-height: 100%;
 }
 
 .retailer-image img {
@@ -325,6 +326,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .retailer-card:hover .retailer-image img {
@@ -338,14 +340,8 @@
 }
 
 @media (max-width: 900px) {
-  .retailers-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .retailer-content {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
+  .retailers-grid { grid-template-columns: 1fr; }
+  .retailer-content { grid-template-columns: 1fr; min-height: auto; }
   
   .retailer-image {
     height: 250px;

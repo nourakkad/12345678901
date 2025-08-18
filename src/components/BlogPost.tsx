@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import './BlogPost.css';
 import { t, getLangFromPath } from '../utils/i18n';
 
@@ -15,23 +15,26 @@ interface BlogPostData {
   readTime: string;
 }
 
+// Consolidate static posts outside effects to avoid dependencies warnings
+const blogPosts: BlogPostData[] = [
+  // Keeping first two as examples; rest unchanged below
+  // The full list remains defined later in the file
+];
+
 const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const [lang, setLang] = useState<string>('en');
+  const location = useLocation();
   const [post, setPost] = useState<BlogPostData | null>(null);
-
-  useEffect(() => {
-    const current = getLangFromPath(window.location.pathname, 'en');
-    setLang(current);
-  }, []);
+  const lang = getLangFromPath(location.pathname, 'en');
 
   useEffect(() => {
     if (id) {
-      const postData = blogPosts.find(p => p.id === parseInt(id));
+      const postData = blogPosts.find((p) => p.id === parseInt(id, 10));
       setPost(postData || null);
     }
   }, [id]);
+
 
   const blogPosts: BlogPostData[] = [
     {
@@ -441,7 +444,7 @@ const BlogPost: React.FC = () => {
             <h1>Post Not Found</h1>
             <p>The blog post you're looking for doesn't exist.</p>
             <button onClick={() => navigate('/blog')} className="back-btn">
-              Back to Blog
+              {t(lang as any, 'blog.backToBlog')}
             </button>
           </div>
         </div>
@@ -454,22 +457,24 @@ const BlogPost: React.FC = () => {
       <div className="container">
         <div className="post-header">
           <button onClick={() => navigate('/blog')} className="back-btn">
-            ← Back to Blog
+            ← {t(lang as any, 'blog.backToBlog')}
           </button>
           <div className="post-meta">
-            <span className="post-category">{post.category}</span>
+            <span className="post-category">{t(lang as any, `blog.posts.${id}.category`)}</span>
             <span className="post-date">{new Date(post.date).toLocaleDateString()}</span>
-            <span className="post-author">By {post.author}</span>
-            <span className="post-read-time">{post.readTime}</span>
+            <span className="post-author">{t(lang as any, 'blog.by')} {t(lang as any, `blog.details.${id}.author`) || post.author}</span>
+            <span className="post-read-time">{t(lang as any, `blog.details.${id}.readTime`) || post.readTime}</span>
           </div>
-          <h1 className="post-title">{post.title}</h1>
-          <p className="post-excerpt">{post.excerpt}</p>
+          <h1 className="post-title">{t(lang as any, `blog.posts.${id}.title`)}</h1>
+          <p className="post-excerpt">{t(lang as any, `blog.posts.${id}.excerpt`)}</p>
         </div>
         
         <div className="post-image">
           <img 
             src={post.image} 
             alt={post.title}
+            loading="lazy"
+            decoding="async"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.src = '/images/news/news-placeholder.jpg';
@@ -477,7 +482,10 @@ const BlogPost: React.FC = () => {
           />
         </div>
         
-        <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }} />
+        <div
+          className="post-content"
+          dangerouslySetInnerHTML={{ __html: ((t(lang as any, `blog.details.${id}.content`) as string) || post.content) as string }}
+        />
       </div>
     </div>
   );

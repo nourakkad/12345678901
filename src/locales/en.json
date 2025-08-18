@@ -26,7 +26,27 @@
     "heroTitle": "Blog",
     "heroSubtitle": "Stay updated with the latest news and stories from Damascus Gin",
     "readMore": "Read Full Article",
-    "by": "by"
+    "by": "by",
+    "readMoreBtn": "Read More",
+    "prev": "Previous",
+    "next": "Next",
+    "backToBlog": "Back to Blog",
+    "posts": {
+      "1": { "title": "Damascus Gin Wins Gold at International Spirits Competition", "excerpt": "Our flagship gin has been recognized for its exceptional quality and unique flavor profile at the prestigious International Spirits Competition.", "category": "Awards" },
+      "2": { "title": "The Art of Craft Gin: Behind the Scenes at Damascus Distillery", "excerpt": "Discover the meticulous process behind crafting our signature gin, from botanical selection to the final distillation.", "category": "Production" },
+      "3": { "title": "New Seasonal Limited Edition: Damascus Gin Winter Spice", "excerpt": "Experience the warmth of winter with our new limited edition gin featuring seasonal spices and botanicals.", "category": "New Products" },
+      "4": { "title": "Sustainable Distilling: Our Commitment to the Environment", "excerpt": "Learn about our eco-friendly practices and commitment to sustainable production methods.", "category": "Sustainability" },
+      "5": { "title": "Cocktail Masterclass: Perfect Gin & Tonic with Damascus", "excerpt": "Join our master distiller for an exclusive tutorial on creating the perfect gin and tonic using Damascus Gin.", "category": "Events" },
+      "6": { "title": "The History of Gin in the Levant: A Cultural Journey", "excerpt": "Explore the rich history of gin production in the Middle East and how Damascus Gin continues this tradition.", "category": "History" }
+    },
+    "details": {
+      "1": { "author": "Damascus Gin Team", "readTime": "5 min read", "content": "" },
+      "2": { "author": "Master Distiller", "readTime": "7 min read", "content": "" },
+      "3": { "author": "Product Development Team", "readTime": "6 min read", "content": "" },
+      "4": { "author": "Environmental Team", "readTime": "8 min read", "content": "" },
+      "5": { "author": "Master Distiller", "readTime": "10 min read", "content": "" },
+      "6": { "author": "Cultural Historian", "readTime": "12 min read", "content": "" }
+    }
   },
   "cocktails": {
     "heroTitle": "Cocktail Bliss",
@@ -138,6 +158,17 @@
     "heroSubtitle": "Find Damascus Gin at select retailers and online stores",
     "retailLocations": "Retail Locations",
     "retailDesc": "Visit these select retailers to experience Damascus Gin in person",
+    "online": { "address": "Online Shop" },
+    "rating": { "outOf": "out of 5 stars", "reviews": "reviews" },
+    "buttons": { "shopOnline": "Shop Online", "viewOnMaps": "View on Google Maps", "callNow": "Call Now" },
+    "retailers": {
+      "1": { "type": "Premium Spirits Shop", "description": "Exclusive retailer for premium spirits including Damascus Gin. Visit our store to discover our curated selection of fine spirits and craft gins." },
+      "2": { "type": "Wine & Spirits Shop", "description": "Premium wine and spirits retailer featuring Damascus Gin. Visit our store to discover our curated selection of fine wines and craft spirits." },
+      "3": { "type": "Premium Spirits Shop", "description": "Premium spirits retailer featuring Damascus Gin. Visit our store to discover our selection of fine spirits and craft gins." },
+      "4": { "type": "Premium Spirits Shop", "description": "Premium spirits retailer in the heart of Gemmayzeh featuring Damascus Gin. Visit our store to discover our selection of fine spirits and craft gins." },
+      "5": { "type": "Wine & Spirits Shop", "description": "Premium wine and spirits retailer in Broummana featuring Damascus Gin. Visit our store to discover our curated selection of fine wines and craft spirits." },
+      "6": { "type": "Online Wine & Spirits Shop", "description": "Premium online retailer specializing in Levantine wines, spirits, and artisan crafts. Discover Damascus Gin and other fine spirits from the region with worldwide shipping." }
+    },
     "onlineTitle": "Online Retailers",
     "onlineDesc": "Order Damascus Gin online and have it delivered to your door",
     "shopOnline": "Shop Online",

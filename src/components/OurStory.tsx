@@ -27,14 +27,13 @@ const OurStory: React.FC = () => {
       }
     );
 
-    if (sectionThreeRef.current) {
-      observer.observe(sectionThreeRef.current);
+    const element = sectionThreeRef.current;
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (sectionThreeRef.current) {
-        observer.unobserve(sectionThreeRef.current);
-      }
+      if (element) observer.unobserve(element);
     };
   }, []);
 
@@ -60,29 +59,29 @@ const OurStory: React.FC = () => {
         <div className="gallery-grid">
           <div className="top-row">
             <div className="main-placeholder">
-              <img src="/images/ourstory/1.webp" alt="Our Story Main" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+              <img src="/images/ourstory/1.webp" alt="Our Story Main" loading="lazy" decoding="async" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
             </div>
             <div className="side-stack">
               <div className="small-placeholder">
-                <img src="/images/ourstory/2.webp" alt="Our Story Side 1" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+                <img src="/images/ourstory/2.webp" alt="Our Story Side 1" loading="lazy" decoding="async" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
               </div>
               <div className="small-placeholder">
-                <img src="/images/ourstory/3.webp" alt="Our Story Side 2" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+                <img src="/images/ourstory/3.webp" alt="Our Story Side 2" loading="lazy" decoding="async" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
               </div>
             </div>
           </div>
           <div className="thumb-row">
             <div className="thumb-placeholder">
-              <img src="/images/ourstory/4.webp" alt="Our Story Thumb 1" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+              <img src="/images/ourstory/4.webp" alt="Our Story Thumb 1" loading="lazy" decoding="async" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
             </div>
             <div className="thumb-placeholder">
-              <img src="/images/ourstory/5.webp" alt="Our Story Thumb 2" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+              <img src="/images/ourstory/5.webp" alt="Our Story Thumb 2" loading="lazy" decoding="async" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
             </div>
             <div className="thumb-placeholder">
-              <img src="/images/ourstory/6.webp" alt="Our Story Thumb 3" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+              <img src="/images/ourstory/6.webp" alt="Our Story Thumb 3" loading="lazy" decoding="async" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
             </div>
             <div className="thumb-placeholder">
-              <img src="/images/ourstory/7.webp" alt="Our Story Thumb 4" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+              <img src="/images/ourstory/7.webp" alt="Our Story Thumb 4" loading="lazy" decoding="async" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
             </div>
           </div>
         </div>
@@ -100,12 +99,12 @@ const OurStory: React.FC = () => {
           </div>
           <div className="i1">
             <div className="img-ph">
-              <img src="/images/ourstory/2.1.webp" alt="Our Story Section 3" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+              <img src="/images/ourstory/2.1.webp" alt="Our Story Section 3" loading="lazy" decoding="async" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
             </div>
           </div>
           <div className="i2">
             <div className="img-ph">
-              <img src="/images/ourstory/2.2.webp" alt="Our Story Section 3" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
+              <img src="/images/ourstory/2.2.webp" alt="Our Story Section 3" loading="lazy" decoding="async" style={{objectFit: 'cover', width: '100%', height: '100%'}} />
             </div>
           </div>
           <div className="t2">
