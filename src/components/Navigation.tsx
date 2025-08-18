@@ -171,6 +171,18 @@ const Navigation: React.FC = () => {
           </ul>
 
           <div className="nav-right">
+            <div className="nav-lang nav-lang-mobile" ref={langRef}>
+              <button className="nav-lang-btn" onClick={() => setIsLangOpen((v) => !v)} aria-expanded={isLangOpen} aria-haspopup="menu">
+                <img className="flag-img" src={currentFlag(lang)} alt="current language" width={24} height={16} />
+                <span className="nav-lang-caret">▾</span>
+              </button>
+              <div className={`nav-lang-menu ${isLangOpen ? 'open' : ''}`} role="menu">
+                <button className={`lang-item${lang==='en' ? ' active' : ''}`} onClick={() => selectLang('en')} role="menuitem" aria-label="English"><img className="flag-img" src="/images/flags/gb.svg" alt="English" width={24} height={16} /></button>
+                <button className={`lang-item${lang==='ar' ? ' active' : ''}`} onClick={() => selectLang('ar')} role="menuitem" aria-label="Arabic"><img className="flag-img" src="/images/flags/sa.svg" alt="Arabic" width={24} height={16} /></button>
+                <button className={`lang-item${lang==='es' ? ' active' : ''}`} onClick={() => selectLang('es')} role="menuitem" aria-label="Español"><img className="flag-img" src="/images/flags/es.svg" alt="Español" width={24} height={16} /></button>
+                <button className={`lang-item${lang==='it' ? ' active' : ''}`} onClick={() => selectLang('it')} role="menuitem" aria-label="Italiano"><img className="flag-img" src="/images/flags/it.svg" alt="Italiano" width={24} height={16} /></button>
+              </div>
+            </div>
             <Link to={['en','it','ar','es'].includes(location.pathname.split('/').filter(Boolean)[0]) ? `/${lang}/cocktails` : '/cocktails'} className="nav-cta" onClick={closeMobileMenu}>{t(lang as any, 'nav.cta')}</Link>
             <button 
               className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}

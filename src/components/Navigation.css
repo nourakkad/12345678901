@@ -90,29 +90,32 @@ body.rtl .nav-menu a::after { left: 50%; right: auto; transform: translateX(-50%
 
 .mobile-menu {
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  max-width: 400px;
-  height: 100vh;
+  top: 64px;
+  right: 12px;
+  width: min(92vw, 360px);
+  height: auto;
+  max-height: 80vh;
+  overflow-y: auto;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   backdrop-filter: blur(20px);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease, visibility 0.2s ease;
+  transition: transform 0.25s ease, opacity 0.2s ease, visibility 0.2s ease;
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  transform: translateX(100%);
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+  transform: translateY(-8px) scale(0.98);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
 .mobile-menu.active {
-  transform: translateX(0);
+  transform: translateY(0) scale(1);
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -134,3 +137,9 @@ body.rtl .nav-menu a::after { left: 50%; right: auto; transform: translateX(-50%
   opacity: 1;
   visibility: visible;
 } 
+
+/* Mobile language in header */
+.nav-lang-mobile { display: none; }
+@media (max-width: 991px) {
+  .nav-lang-mobile { display: inline-flex; margin-right: 8px; }
+}
