@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useMemo } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import './BlogPost.css';
 import { t, getLangFromPath } from '../utils/i18n';
@@ -21,15 +21,10 @@ const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const location = useLocation();
-  const [post, setPost] = useState<BlogPostData | null>(null);
   const lang = getLangFromPath(location.pathname, 'en');
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => {
-    if (id) {
-      const postData = blogPosts.find((p) => p.id === parseInt(id, 10));
-      setPost(postData || null);
-    }
+  const post = useMemo(() => {
+    const numericId = parseInt(id || '', 10);
+    return blogPosts.find((p) => p.id === numericId) || null;
   }, [id]);
 
 
