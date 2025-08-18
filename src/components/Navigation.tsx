@@ -74,6 +74,16 @@ const Navigation: React.FC = () => {
     navigate(newPath || '/' + code);
   };
 
+  const pathWithLang = (path: string) => {
+    const segments = location.pathname.split('/').filter(Boolean);
+    const hasLang = segments[0] && ['en','it','ar','es'].includes(segments[0]);
+    if (hasLang) {
+      const clean = path.replace(/^\//, '');
+      return `/${lang}/${clean}`;
+    }
+    return path;
+  };
+
   return (
     <>
       <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
@@ -183,54 +193,59 @@ const Navigation: React.FC = () => {
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-        <ul>
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0, width: '100%', textAlign: 'center' }}>
           <li>
             <Link 
-              to="/" 
+              to={pathWithLang('/')} 
               className={isActive('/') ? 'active' : ''}
               onClick={closeMobileMenu}
+              style={{ color: '#fff', textDecoration: 'none', display: 'block', padding: '12px 0', fontSize: '1.25rem', fontWeight: 700 }}
             >
-              Home
+              {t(lang as any, 'nav.home')}
             </Link>
           </li>
           <li>
             <Link 
-              to="/our-story" 
+              to={pathWithLang('/our-story')} 
               className={isActive('/our-story') ? 'active' : ''}
               onClick={closeMobileMenu}
+              style={{ color: '#fff', textDecoration: 'none', display: 'block', padding: '12px 0', fontSize: '1.25rem', fontWeight: 700 }}
             >
-              Our Story
+              {t(lang as any, 'nav.ourStory')}
             </Link>
           </li>
           <li>
             <Link 
-              to="/gallery" 
+              to={pathWithLang('/gallery')} 
               className={isActive('/gallery') ? 'active' : ''}
               onClick={closeMobileMenu}
+              style={{ color: '#fff', textDecoration: 'none', display: 'block', padding: '12px 0', fontSize: '1.25rem', fontWeight: 700 }}
             >
-              Gallery
+              {t(lang as any, 'nav.gallery')}
             </Link>
           </li>
           <li>
             <Link 
-              to="/blog" 
+              to={pathWithLang('/blog')} 
               className={isActive('/blog') ? 'active' : ''}
               onClick={closeMobileMenu}
+              style={{ color: '#fff', textDecoration: 'none', display: 'block', padding: '12px 0', fontSize: '1.25rem', fontWeight: 700 }}
             >
-              Blog
+              {t(lang as any, 'nav.blog')}
             </Link>
           </li>
           <li>
             <Link 
-              to="/where-to-buy" 
+              to={pathWithLang('/where-to-buy')} 
               className={isActive('/where-to-buy') ? 'active' : ''}
               onClick={closeMobileMenu}
+              style={{ color: '#fff', textDecoration: 'none', display: 'block', padding: '12px 0', fontSize: '1.25rem', fontWeight: 700 }}
             >
-              Where to buy
+              {t(lang as any, 'nav.whereToBuy')}
             </Link>
           </li>
           <li>
-            <Link to="/cocktails" onClick={closeMobileMenu} className="nav-cta mobile">Cocktail Bliss</Link>
+            <Link to={pathWithLang('/cocktails')} onClick={closeMobileMenu} className="nav-cta mobile">{t(lang as any, 'nav.cta')}</Link>
           </li>
         </ul>
       </div>
