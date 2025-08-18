@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import './BlogPost.css';
 import { t, getLangFromPath } from '../utils/i18n';
@@ -22,10 +22,6 @@ const BlogPost: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const lang = getLangFromPath(location.pathname, 'en');
-  const post = useMemo(() => {
-    const numericId = parseInt(id || '', 10);
-    return blogPosts.find((p) => p.id === numericId) || null;
-  }, [id]);
 
 
   const blogPosts: BlogPostData[] = [
@@ -427,6 +423,11 @@ const BlogPost: React.FC = () => {
       readTime: '12 min read'
     }
   ];
+
+  const post = (() => {
+    const numericId = parseInt(id || '', 10);
+    return blogPosts.find((p) => p.id === numericId) || null;
+  })();
 
   if (!post) {
     return (
