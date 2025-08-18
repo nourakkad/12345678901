@@ -6,6 +6,8 @@ import Home from './components/Home';
 import OurStory from './components/OurStory';
 import Gallery from './components/Gallery';
 import Blog from './components/Blog';
+import BlogPost from './components/BlogPost';
+import Cocktails from './components/Cocktails';
 import WhereToBuy from './components/WhereToBuy';
 import AgeVerification from './components/AgeVerification';
 import { getLangFromPath } from './utils/i18n';
@@ -59,6 +61,8 @@ function App() {
           <Route path="/our-story" element={<OurStory />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
+          <Route path="/cocktails" element={<Cocktails />} />
           <Route path="/where-to-buy" element={<WhereToBuy />} />
 
           {/* Language-prefixed routes */}
@@ -66,6 +70,8 @@ function App() {
           <Route path=":lang/our-story" element={<OurStory />} />
           <Route path=":lang/gallery" element={<Gallery />} />
           <Route path=":lang/blog" element={<Blog />} />
+          <Route path=":lang/blog/:id" element={<BlogPost />} />
+          <Route path=":lang/cocktails" element={<Cocktails />} />
           <Route path=":lang/where-to-buy" element={<WhereToBuy />} />
         </Routes>
       </div>

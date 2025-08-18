@@ -28,6 +28,111 @@
     "readMore": "Leggi l'articolo completo",
     "by": "di"
   },
+  "cocktails": {
+    "heroTitle": "Cocktail Bliss",
+    "heroSubtitle": "Scopri i cocktail perfetti con Damascus Gin",
+    "page": {
+      "intro": {
+        "title": "Damascus Gin: Un viaggio in ogni sorso",
+        "p1": "Con Damascus Gin come musa, abbiamo creato quattro cocktail unici per celebrare il suo squisito blend di petali di rosa, ginepro, agrumi e pistacchio. Ogni drink rende omaggio ai ricchi paesaggi profumati di Siria e Libano, dove i sapori antichi incontrano la mixology moderna.",
+        "p2": "Immagina il Damascus Dream, un cocktail che stratifica delicatamente agrumi, spezie e calore con le note distintive di Damascus Gin, rifinito con un tocco di cannella e scorza d’arancia. Oppure prova il Damascus Gin Mojito, dove menta fresca e petali di rosa offrono un tocco rinfrescante al classico mojito, con eleganza mediorientale.",
+        "p3": "Per una bevanda più frizzante, il Sultan’s Spritz unisce le note floreali del gin a un accenno brillante di Aperol e arancia, perfetto da condividere. Per chi desidera un finale sofisticato, l’Oasis Breeze bilancia agrumi, vermouth e un tocco di rosa, promettendo un momento di calma ed eleganza.",
+        "p4": "Questi cocktail ti accompagnano in un viaggio sensoriale. Che tu stia condividendo con amici o godendoti un momento per te, ogni sorso è un assaggio di un altro mondo. E per semplificare, trovi qui le ricette da preparare a casa!",
+        "overlayTitle": "Cocktail d’autore",
+        "overlaySubtitle": "Scopri quattro ricette uniche con Damascus Gin"
+      },
+      "common": {
+        "ingredients": "Ingredienti",
+        "ingredientsLabel": "Ingredienti :",
+        "instructions": "Istruzioni",
+        "tips": "Consigli"
+      },
+      "dream": {
+        "title": "Damascus Dream",
+        "category": "Cocktail d’autore",
+        "overlaySubtitle": "Un viaggio tra spezie e agrumi",
+        "ingredients": [
+          "40 ml Damascus Gin (infuso con petali di rosa, ginepro, pompelmo e pistacchio)",
+          "15 ml Amaretto",
+          "10 ml succo d’arancia fresco",
+          "10 ml succo di limone fresco",
+          "10 ml sciroppo semplice",
+          "Ghiaccio",
+          "Guarnizione: scorza d’arancia e bastoncino di cannella"
+        ],
+        "instructions": [
+          "In uno shaker, aggiungi gin, Amaretto, succo d’arancia, succo di lime e sciroppo semplice.",
+          "Riempi con ghiaccio e agita 15–20 secondi fino a raffreddare.",
+          "Filtra in un bicchiere con ghiaccio fresco.",
+          "Guarnisci con scorza d’arancia e bastoncino di cannella."
+        ],
+        "tips": "Usa agrumi freschi e ghiaccio di qualità. L’equilibrio tra spezie calde e agrumi esalta il carattere unico di Damascus Gin."
+      },
+      "mojito": {
+        "title": "Damascus Gin Mojito",
+        "category": "Classico rivisitato",
+        "overlaySubtitle": "Eleganza mediorientale con freschezza classica",
+        "ingredients": [
+          "50 ml Damascus Gin (infuso con petali di rosa, ginepro, pompelmo e pistacchio)",
+          "20 ml succo di lime fresco",
+          "15 ml sciroppo semplice (a piacere)",
+          "6–8 foglie di menta fresca",
+          "Soda",
+          "Ghiaccio",
+          "Guarnizione: scorza di lime, menta fresca e petali di rosa"
+        ],
+        "instructions": [
+          "Nello shaker, pesta delicatamente la menta con succo di lime e sciroppo per liberare gli aromi senza amarezza.",
+          "Aggiungi gin e ghiaccio, poi agita fino a raffreddare.",
+          "Filtra in un tumbler alto con ghiaccio fresco.",
+          "Completa con soda.",
+          "Guarnisci con scorza di lime, menta e petali di rosa."
+        ],
+        "tips": "La chiave è pestare delicatamente la menta. I petali di rosa aggiungono un tocco unico mediorientale."
+      },
+      "sultan": {
+        "title": "The Sultan’s Spritz",
+        "category": "Social",
+        "overlaySubtitle": "Lusso e celebrazione in ogni sorso",
+        "ingredients": [
+          "50 ml Damascus Gin",
+          "50 ml Aperol",
+          "40 ml succo d’arancia fresco",
+          "Soda",
+          "Guarnizione: scorza d’arancia"
+        ],
+        "instructions": [
+          "In un calice con ghiaccio, unisci gin, Aperol e succo d’arancia.",
+          "Mescola delicatamente.",
+          "Completa con soda a piacere.",
+          "Guarnisci con scorza d’arancia."
+        ],
+        "tips": "Uno spritz sofisticato da condividere. Il floreale del gin con l’amaro dell’Aperol crea un’esperienza elegante e rinfrescante."
+      },
+      "oasis": {
+        "title": "Oasis Breeze",
+        "category": "Rinfrescante",
+        "overlaySubtitle": "Calma ed eleganza in ogni sorso",
+        "ingredients": [
+          "45 ml Damascus Gin (infuso con petali di rosa, ginepro, pompelmo e pistacchio)",
+          "15 ml vermouth dry (o vermouth dolce)",
+          "20 ml succo di limone fresco",
+          "15 ml sciroppo semplice",
+          "Ghiaccio",
+          "Opzionale: soda o tonica",
+          "Guarnizione: scorza di limone e petali di rosa"
+        ],
+        "instructions": [
+          "Nello shaker con ghiaccio, aggiungi gin, vermouth, succo di limone e sciroppo.",
+          "Agita 15–20 secondi fino a raffreddare.",
+          "Filtra in una coppa fredda.",
+          "Per allungare, aggiungi un goccio di soda o tonica.",
+          "Guarnisci con scorza di limone e petali di rosa."
+        ],
+        "tips": "Delicato ed equilibrato: agrumi, vermouth e un tocco di rosa per un’esperienza sofisticata e rinfrescante."
+      }
+    }
+  },
   "buy": {
     "heroTitle": "Dove acquistare",
     "heroSubtitle": "Trova Damascus Gin presso rivenditori selezionati e negozi online",

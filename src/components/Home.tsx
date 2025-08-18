@@ -55,6 +55,11 @@ const Home: React.FC = () => {
   const handlePrevNews = () => setNewsIndex((prev) => (prev === 0 ? newsSlides.length - 1 : prev - 1));
   const handleNextNews = () => setNewsIndex((prev) => (prev === newsSlides.length - 1 ? 0 : prev + 1));
 
+  // Cocktail and Contact section refs (last two sections)
+  const cocktailCardRef = useRef<HTMLDivElement>(null);
+  const contactInfoRef = useRef<HTMLDivElement>(null);
+  const contactFormRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const handleScroll = () => {
       const checkInView = (ref: React.MutableRefObject<Element | null>) => {
@@ -89,6 +94,9 @@ const Home: React.FC = () => {
       checkInView(symphonyImg3Ref);
       checkInView(newsImageRef);
       checkInView(newsTextRef);
+      checkInView(cocktailCardRef);
+      checkInView(contactInfoRef);
+      checkInView(contactFormRef);
     };
     window.addEventListener('scroll', handleScroll);
     handleScroll();
@@ -114,7 +122,7 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-video-container">
-          <video className="hero-video" autoPlay muted loop>
+          <video className="hero-video" autoPlay muted loop playsInline preload="auto">
             <source src="/videos/hero-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -329,34 +337,15 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Cocktail Section */}
-      <section className="cocktail">
-        <div className="cocktail-video-container">
-          <video className="cocktail-video" autoPlay muted loop>
-            <source src="/videos/cocktail-bg.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div className="cocktail-content">
-          <div className="cocktail-card">
-            <h2 className="cocktail-title">{t(lang, 'home.cocktail.title')}</h2>
-            <p className="cocktail-description">
-              {t(lang, 'home.cocktail.desc')}
-            </p>
-            <a href="/cocktails" className="cocktail-cta">{t(lang, 'home.cocktail.cta')}</a>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section className="contact">
         <div className="contact-content">
-          <div className="contact-info">
+          <div className="contact-info" ref={contactInfoRef}>
             <h2>{t(lang, 'home.contact.title')}</h2>
             <h3>{t(lang, 'home.contact.subtitle')}</h3>
             <p>{t(lang, 'home.contact.desc')}</p>
           </div>
-          <div className="contact-form">
+          <div className="contact-form" ref={contactFormRef}>
             <h4>{t(lang, 'home.contact.formTitle')}</h4>
             <form>
               <div className="contact-form-group">

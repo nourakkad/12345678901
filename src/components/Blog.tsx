@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Blog.css';
 import { getLangFromPath, t } from '../utils/i18n';
 
@@ -6,6 +7,7 @@ const Blog: React.FC = () => {
   const lang = getLangFromPath(window.location.pathname);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
+  const navigate = useNavigate();
 
   // News data from Home component
   const newsData = [
@@ -69,6 +71,10 @@ const Blog: React.FC = () => {
     setCurrentPage(pageNumber);
   };
 
+  const handleReadMore = (postId: number) => {
+    navigate(`/blog/${postId}`);
+  };
+
   return (
     <div className="blog">
       {/* Hero Section - Matching Our Story Design */}
@@ -105,7 +111,12 @@ const Blog: React.FC = () => {
                   </div>
                   <h3 className="news-title">{post.title}</h3>
                   <p className="news-excerpt">{post.excerpt}</p>
-                  <button className="read-more-btn">Read More</button>
+                  <button 
+                    className="read-more-btn"
+                    onClick={() => handleReadMore(post.id)}
+                  >
+                    Read More
+                  </button>
                 </div>
               </article>
             ))}

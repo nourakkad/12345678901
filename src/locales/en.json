@@ -28,6 +28,111 @@
     "readMore": "Read Full Article",
     "by": "by"
   },
+  "cocktails": {
+    "heroTitle": "Cocktail Bliss",
+    "heroSubtitle": "Discover the perfect cocktails with Damascus Gin",
+    "page": {
+      "intro": {
+        "title": "Damascus Gin: A Journey in Every Sip",
+        "p1": "With Damascus Gin as our muse, we’ve created four unique cocktails to celebrate its exquisite blend of rose petals, juniper, citrus and pistachio. Each drink pays tribute to the rich, fragrant landscapes of Syria and Lebanon, evoking a sense of place and tradition, where ancient flavours meet modern mixology.",
+        "p2": "Imagine the Damascus Dream, a cocktail that delicately layers citrus, spice, and warmth with the distinctive notes of Damascus Gin, finished with a touch of cinnamon and orange zest. It’s like an evening in the heart of a spice market, alive with colour and aroma. Or taste the Damascus Gin Mojito, where fresh mint and rose petals offer a refreshing twist on the classic mojito, infusing it with Middle Eastern elegance.",
+        "p3": "For a more effervescent drink, the Sultan’s Spritz combines the gin’s floral undertones with a bright hint of Aperol and orange, creating a cocktail perfect for sharing. And for those who crave a sophisticated finish, the Oasis Breeze balances citrus, vermouth, and a touch of rose, promising a moment of calm and elegance.",
+        "p4": "These cocktails are created to take you on a sensory journey, with each sip taking the essence of our Damascus Gin. Whether you’re sharing with friends or enjoying a moment to yourself, each drink is a taste of another world, one sip at a time. And to make it easy, we have the recipes right here for you to try at home!",
+        "overlayTitle": "Signature Cocktails",
+        "overlaySubtitle": "Explore four unique recipes crafted around Damascus Gin"
+      },
+      "common": {
+        "ingredients": "Ingredients",
+        "ingredientsLabel": "Ingredients :",
+        "instructions": "Instructions",
+        "tips": "Tips"
+      },
+      "dream": {
+        "title": "Damascus Dream",
+        "category": "Signature Cocktail",
+        "overlaySubtitle": "A journey through spice markets and citrus groves",
+        "ingredients": [
+          "40 ml Damascus Gin (infused with rose petals, juniper, grapefruit, and pistachio)",
+          "15 ml Amaretto",
+          "10 ml fresh orange juice",
+          "10 ml fresh lemon juice",
+          "10 ml simple syrup",
+          "Ice cubes",
+          "Garnish: Orange zest and a cinnamon stick"
+        ],
+        "instructions": [
+          "In a cocktail shaker, add Damascus Gin, Amaretto, orange juice, lime juice, and simple syrup.",
+          "Fill the shaker with ice and shake for about 15-20 seconds until the mixture is well-chilled.",
+          "Strain into a wine ball glass filled with fresh ice.",
+          "Garnish with an orange zest and a cinnamon stick to add an aromatic layer."
+        ],
+        "tips": "For the best experience, use fresh citrus juices and high-quality ice. The combination of warm spices and bright citrus creates a perfect balance that showcases the unique character of Damascus Gin."
+      },
+      "mojito": {
+        "title": "Damascus Gin Mojito",
+        "category": "Classic Twist",
+        "overlaySubtitle": "Middle Eastern elegance meets classic refreshment",
+        "ingredients": [
+          "50 ml Damascus Gin (infused with rose petals, juniper, grapefruit, and pistachio)",
+          "20 ml fresh lime juice",
+          "15 ml simple syrup (adjust to taste)",
+          "6–8 fresh mint leaves",
+          "Club soda",
+          "Ice cubes",
+          "Garnish: Lime zest, fresh mint sprig, and rose petals"
+        ],
+        "instructions": [
+          "In a cocktail shaker, gently mix the mint leaves with lime juice and simple syrup to release the mint's aroma, avoiding over-muddling to keep the mint from turning bitter.",
+          "Add the gin and ice, then shake well until chilled.",
+          "Strain into a tall glass filled with fresh ice.",
+          "Top with club soda for a fizzy, refreshing finish.",
+          "Garnish with a lime zest, a sprig of fresh mint, and a few rose petals for a Damascus-inspired touch."
+        ],
+        "tips": "The key to a perfect mojito is gentle muddling - just enough to release the mint's essential oils without crushing the leaves. The addition of rose petals adds a unique Middle Eastern twist to this classic cocktail."
+      },
+      "sultan": {
+        "title": "The Sultan's Spritz",
+        "category": "Social",
+        "overlaySubtitle": "Luxury and celebration in every sip",
+        "ingredients": [
+          "50 ml Damascus Gin",
+          "50 ml Aperol",
+          "40 ml fresh orange juice",
+          "Soda",
+          "Garnish: Orange zest"
+        ],
+        "instructions": [
+          "In a wine glass filled with ice, combine the gin, Aperol, and fresh orange juice.",
+          "Stir gently to mix the flavors.",
+          "Top with soda to desired strength.",
+          "Garnish with an orange zest for a vibrant, citrusy aroma."
+        ],
+        "tips": "This sophisticated spritz is perfect for sharing with friends. The combination of Damascus Gin's floral undertones with Aperol's bitter complexity creates a luxurious drinking experience that's both refreshing and celebratory."
+      },
+      "oasis": {
+        "title": "Oasis Breeze",
+        "category": "Refreshing",
+        "overlaySubtitle": "Calm and elegance in every sip",
+        "ingredients": [
+          "45 ml Damascus Gin (infused with rose petals, juniper, grapefruit, and pistachio)",
+          "15 ml dry vermouth (for a drier cocktail) or sweet vermouth (for a sweeter cocktail)",
+          "20 ml fresh lemon juice",
+          "15 ml simple syrup",
+          "Ice cubes",
+          "Optional: Club soda or tonic water",
+          "Garnish: Lemon zest and rose petals"
+        ],
+        "instructions": [
+          "In a cocktail shaker filled with ice, add the gin, vermouth, lemon juice, and simple syrup.",
+          "Shake well for 15-20 seconds until the mixture is chilled.",
+          "Strain into a chilled cocktail glass.",
+          "For a longer drink, top with a splash of club soda or tonic water.",
+          "Garnish with a lemon zest and a few rose petals for a sophisticated presentation."
+        ],
+        "tips": "This delicate cocktail offers calm and elegance, like a gentle breeze through a desert oasis. The combination of citrus, vermouth, and a touch of rose creates a perfectly balanced, refreshing experience that's both sophisticated and approachable."
+      }
+    }
+  },
   "buy": {
     "heroTitle": "Where to Buy",
     "heroSubtitle": "Find Damascus Gin at select retailers and online stores",

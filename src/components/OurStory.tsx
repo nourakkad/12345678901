@@ -1,16 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import './OurStory.css';
 import { t, getLangFromPath } from '../utils/i18n';
 
 const OurStory: React.FC = () => {
   const [lang, setLang] = useState<string>('en');
+  const [isSectionThreeVisible, setIsSectionThreeVisible] = useState<boolean>(false);
+  const sectionThreeRef = useRef<HTMLElement>(null);
   const location = useLocation();
 
   useEffect(() => {
     const current = getLangFromPath(location.pathname, 'en');
     setLang(current);
   }, [location.pathname]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsSectionThreeVisible(true);
+        }
+      },
+      {
+        threshold: 0.3, // Trigger when 30% of the section is visible
+        rootMargin: '0px 0px -100px 0px'
+      }
+    );
+
+    if (sectionThreeRef.current) {
+      observer.observe(sectionThreeRef.current);
+    }
+
+    return () => {
+      if (sectionThreeRef.current) {
+        observer.unobserve(sectionThreeRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="our-story">
       {/* Section One - as per provided design */}
@@ -62,7 +89,7 @@ const OurStory: React.FC = () => {
       </section>
 
       {/* Section Three - alternating text/image */}
-      <section className="section-three">
+      <section ref={sectionThreeRef} className={`section-three ${isSectionThreeVisible ? 'animate' : ''}`}>
         <div className="shape-top"></div>
         <div className="shape-mid"></div>
         <div className="grid">
