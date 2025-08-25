@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate, useParams } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
@@ -57,6 +57,13 @@ function NotFoundRedirect() {
   return <Navigate to={`/${lang}/`} replace />;
 }
 
+function RedirectBlogIdLegacy() {
+  const { id } = useParams();
+  const location = useLocation();
+  const lang = getLangFromPath(location.pathname, 'en');
+  return <Navigate to={`/${lang}/blog/${id}`} replace />;
+}
+
 function App() {
   const [isAgeVerified, setIsAgeVerified] = useState(false); // eslint-disable-line @typescript-eslint/no-unused-vars
   const [showAgeVerification, setShowAgeVerification] = useState(true);
@@ -95,7 +102,7 @@ function App() {
           <Route path="/our-story" element={<RedirectToLangPath to="/our-story" />} />
           <Route path="/gallery" element={<RedirectToLangPath to="/gallery" />} />
           <Route path="/blog" element={<RedirectToLangPath to="/blog" />} />
-          <Route path="/blog/:id" element={<RedirectToLangPath to="/blog/${1}" />} />
+          <Route path="/blog/:id" element={<RedirectBlogIdLegacy />} />
           <Route path="/cocktails" element={<RedirectToLangPath to="/cocktails" />} />
           <Route path="/where-to-buy" element={<RedirectToLangPath to="/where-to-buy" />} />
 
