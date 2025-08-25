@@ -22,6 +22,14 @@
 
 /* Keep header structure the same for all languages */
 body.rtl .nav-container { grid-template-areas: 'left center right'; }
+/* Do not mirror header order in RTL: keep LTR flow */
+body.rtl .navigation,
+body.rtl .nav-container,
+body.rtl .nav-left,
+body.rtl .nav-center,
+body.rtl .nav-right,
+body.rtl .nav-menu,
+body.rtl .mobile-menu { direction: ltr; }
 
 /* Areas */
 .nav-left { grid-area: left; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; margin: 0; padding: 0; width: max-content; }
