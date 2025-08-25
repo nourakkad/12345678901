@@ -9,24 +9,23 @@ const AgeVerification: React.FC<AgeVerificationProps> = ({ onVerify }) => {
   return (
     <div className="age-verification-overlay">
       <div className="age-verification-modal">
-        <h1 className="age-verification-title">AGE VERIFICATION</h1>
+        <h1 className="age-verification-title">The Spirit of Damascus</h1>
         <p className="age-verification-subtitle">
-        Ready to begin the journey ?
-        if you are 18 or older, then click Yes.
-        if you are under 18, then click No.
+        Ready to begin the journey?<br />
+        To step into the world of Damascus Gin, we need to confirm - are you 18 or over?
         </p>
         <div className="age-verification-buttons">
           <button 
             className="age-verification-btn yes"
             onClick={() => onVerify(true)}
           >
-            Yes
+            ​YES — Let the journey begin.
           </button>
           <button 
             className="age-verification-btn no"
             onClick={() => onVerify(false)}
           >
-            No
+          ​NO — Patience, young traveler. Your time will come.
           </button>
         </div>
         <p className="age-verification-disclaimer">
