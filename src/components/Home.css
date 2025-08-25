@@ -1773,6 +1773,8 @@ body.rtl .about-card .about-heading { direction: rtl; }
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: calc(1.7em * 7);
+  /* Add standard property for compatibility */
+  line-clamp: 7;
 }
 
 .news-card-btn {
