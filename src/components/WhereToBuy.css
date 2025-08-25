@@ -85,7 +85,7 @@
 .retailers-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .retailer-card {
@@ -101,21 +101,11 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Online retailer special styling */
-.online-retailer {
-  border: 2px solid #e3f2fd;
-  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
-}
-
-.online-retailer:hover {
-  border-color: #2196f3;
-  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.15);
-}
-
 .retailer-content {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  min-height: 280px;
+  min-height: 320px;
+  align-items: stretch;
 }
 
 .retailer-info {
@@ -129,7 +119,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .retailer-name {
@@ -143,18 +133,11 @@
 .retailer-type {
   background: #f0f0f0;
   color: #666;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 14px;
+  font-size: 0.78rem;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
-}
-
-/* Online badge styling */
-.online-badge {
-  background: linear-gradient(135deg, #2196f3, #1976d2);
-  color: white;
-  font-weight: 700;
 }
 
 .retailer-location {
@@ -248,14 +231,14 @@
 .retailer-description {
   color: #4a4a4a;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
 }
 
 .retailer-actions {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
 }
 
@@ -305,7 +288,7 @@
   font-weight: 700;
   transition: all 0.3s ease;
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
 }
 
@@ -318,13 +301,14 @@
 .retailer-image {
   position: relative;
   overflow: hidden;
-  min-height: 100%;
+  height: auto;
 }
 
 .retailer-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.3s ease;
   display: block;
 }
@@ -339,13 +323,19 @@
   padding: 0 2rem;
 }
 
+/* Laptop/Desktop fixed card sizing */
+@media (min-width: 992px) {
+  .retailers-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .retailer-content { min-height: 360px; }
+  .retailer-info { padding: 1.25rem; }
+  .retailer-image { height: 390px; min-height: 320px; }
+}
+
 @media (max-width: 900px) {
   .retailers-grid { grid-template-columns: 1fr; }
   .retailer-content { grid-template-columns: 1fr; min-height: auto; }
   
-  .retailer-image {
-    height: 250px;
-  }
+  .retailer-image { height: 240px; min-height: 240px; }
   
   .retailer-header {
     flex-direction: column;
@@ -366,9 +356,7 @@
     padding: 1rem;
   }
   
-  .retailer-image {
-    height: 200px;
-  }
+  .retailer-image { height: 200px; min-height: 200px; }
   
   .retailer-name {
     font-size: 1.2rem;
@@ -388,4 +376,4 @@
     padding: 0.7rem 1.2rem;
     font-size: 0.9rem;
   }
-} 
+}

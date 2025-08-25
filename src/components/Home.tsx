@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
 import { getLangFromPath, t } from '../utils/i18n';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const location = useLocation();
@@ -269,7 +269,7 @@ const Home: React.FC = () => {
             <p className="essence-description">
               {t(lang, 'home.essence.desc')}
             </p>
-            <a href="/our-story" className="essence-cta">{t(lang, 'home.essence.cta')}</a>
+            <Link to={`/${lang}/our-story`} className="essence-cta">{t(lang, 'home.essence.cta')}</Link>
           </div>
           <div className="essence-gallery">
             <div className="essence-image" ref={essenceImg1Ref} style={{backgroundImage: 'url(/images/essence/essence-1.jpg)'}}></div>

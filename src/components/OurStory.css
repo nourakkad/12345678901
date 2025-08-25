@@ -49,6 +49,8 @@
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   line-height: 1.25;
   margin: 0 0 24px 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .section-one .subtitle {
   font-family: 'Montserrat','Century Gothic',Arial,sans-serif;
@@ -56,6 +58,8 @@
   font-size: clamp(1rem, 2vw, 1.4rem);
   font-weight: 700;
   margin: 0 0 12px 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .section-one .para {
   font-family: 'Inter', sans-serif;
@@ -65,7 +69,9 @@
 
 @media (max-width: 900px) {
   .section-one .container-grid { grid-template-columns: 1fr; gap: 20px; }
-  .section-one .corners { height: 200px; }
+  .section-one .corners { height: auto; min-height: 0; padding: 24px; }
+  .section-one .title { font-size: clamp(1.4rem, 5.5vw, 2rem); }
+  .section-one .subtitle { font-size: clamp(0.95rem, 3.8vw, 1.2rem); }
 }
 
 .story-hero {
