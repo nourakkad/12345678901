@@ -4,8 +4,12 @@
     "ourStory": "La nostra storia",
     "gallery": "Galleria",
     "blog": "Blog",
+    "awards": "Premi",
     "whereToBuy": "Dove acquistare",
     "cta": "Cocktail Bliss"
+  },
+  "awards": {
+    "comingSoon": "In arrivo"
   },
   "news": {
     "title": "Notizie & Eventi"

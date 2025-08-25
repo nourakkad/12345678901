@@ -70,6 +70,7 @@ const Navigation: React.FC = () => {
     setLang(code);
     localStorage.setItem('lang', code);
     setIsLangOpen(false);
+    setIsMobileMenuOpen(false);
     // navigate to same path with lang prefix
     const segments = location.pathname.split('/').filter(Boolean);
     const hasLang = segments[0] && ['en','it','ar','es'].includes(segments[0]);
@@ -169,6 +170,15 @@ const Navigation: React.FC = () => {
             </li>
             <li>
               <Link 
+                to={['en','it','ar','es'].includes(location.pathname.split('/').filter(Boolean)[0]) ? `/${lang}/awards` : '/awards'} 
+                className={isActive('/awards') ? 'active' : ''}
+                onClick={closeMobileMenu}
+              >
+                {t(lang as any, 'nav.awards')}
+              </Link>
+            </li>
+            <li>
+              <Link 
                 to={['en','it','ar','es'].includes(location.pathname.split('/').filter(Boolean)[0]) ? `/${lang}/where-to-buy` : '/where-to-buy'} 
                 className={isActive('/where-to-buy') ? 'active' : ''}
                 onClick={closeMobileMenu}
@@ -252,6 +262,16 @@ const Navigation: React.FC = () => {
               style={{ color: '#fff', textDecoration: 'none', display: 'block', padding: '12px 0', fontSize: '1.25rem', fontWeight: 700 }}
             >
               {t(lang as any, 'nav.blog')}
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to={pathWithLang('/awards')} 
+              className={isActive('/awards') ? 'active' : ''}
+              onClick={closeMobileMenu}
+              style={{ color: '#fff', textDecoration: 'none', display: 'block', padding: '12px 0', fontSize: '1.25rem', fontWeight: 700 }}
+            >
+              {t(lang as any, 'nav.awards')}
             </Link>
           </li>
           <li>

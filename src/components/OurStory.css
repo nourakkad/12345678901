@@ -2,6 +2,19 @@
   margin-top: 80px;
 }
 
+/* Unify typography across the Our Story page */
+.our-story,
+.our-story h1,
+.our-story h2,
+.our-story h3,
+.our-story h4,
+.our-story p,
+.our-story .para,
+.our-story .title,
+.our-story .subtitle {
+	font-family: 'Century Gothic', Arial, sans-serif !important;
+}
+
 /* Section One - Layout like the image */
 .section-one {
   position: relative;
@@ -43,7 +56,7 @@
 }
 
 .section-one .title {
-  font-family: 'Montserrat','Century Gothic',Arial,sans-serif;
+  font-family: 'Century Gothic', Arial, sans-serif;
   font-weight: 700;
   color: #2350d7;
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
@@ -53,7 +66,7 @@
   word-break: break-word;
 }
 .section-one .subtitle {
-  font-family: 'Montserrat','Century Gothic',Arial,sans-serif;
+  font-family: 'Century Gothic', Arial, sans-serif;
   color: #2350d7;
   font-size: clamp(1rem, 2vw, 1.4rem);
   font-weight: 700;
@@ -62,7 +75,7 @@
   word-break: break-word;
 }
 .section-one .para {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Century Gothic', Arial, sans-serif;
   color: #232323;
   line-height: 1.7;
 }
@@ -242,10 +255,10 @@
 	}
 } 
 
-.section-three { position: relative; padding: 50px 0; background: linear-gradient(180deg, #fff7e0 0%, #ffffff 100%); }
+.section-three { position: relative; padding: 50px 0; background: linear-gradient(180deg, #fff7e0 0%, #ffffff 100%); overflow: hidden; }
 
-.section-three .shape-top { position: absolute; top: 0; left: 40px; width: 160px; height: 36px; background: #edd68a; border-radius: 0 0 40px 40px; }
-.section-three .shape-mid { position: absolute; top: 44%; right: 40px; width: 22px; height: 140px; background: #edd68a; border-radius: 20px 0 0 20px; }
+.section-three .shape-top { position: absolute; top: 0; left: 40px; width: 160px; height: 36px; background: #edd68a; border-radius: 0 0 40px 40px; pointer-events: none; }
+.section-three .shape-mid { position: absolute; top: 44%; right: 40px; width: 22px; height: 140px; background: #edd68a; border-radius: 20px 0 0 20px; pointer-events: none; }
 
 .section-three .grid {
 	max-width: 1200px;
@@ -329,6 +342,7 @@
 	color: #1a1a1a;
 	line-height: 1.2;
 	margin: 0;
+	font-family: 'Century Gothic', Arial, sans-serif;
 }
 
 .section-three .detail {
@@ -336,6 +350,7 @@
 	color: #4a4a4a;
 	line-height: 1.6;
 	margin: 0;
+	font-family: 'Century Gothic', Arial, sans-serif;
 }
 
 /* Directional Animation Keyframes */

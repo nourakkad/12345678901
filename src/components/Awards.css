@@ -1,0 +1,47 @@
+.awards-page {
+  padding: 120px 0;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.awards-container {
+  text-align: center;
+  padding: 56px 28px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  max-width: 720px;
+  margin: 0 16px;
+}
+
+.awards-icon {
+  font-size: 64px;
+  color: #e0b000;
+  margin-bottom: 16px;
+}
+
+.awards-title {
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #1f4fcd;
+  margin-bottom: 8px;
+}
+
+.awards-coming {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 1.25rem;
+  color: #444;
+}
+
+@media (max-width: 767px) {
+  .awards-page { padding: 80px 0; }
+  .awards-icon { font-size: 52px; }
+  .awards-title { font-size: 2rem; }
+  .awards-coming { font-size: 1.1rem; }
+}
+
+

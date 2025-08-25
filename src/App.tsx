@@ -9,6 +9,7 @@ import Blog from './components/Blog';
 import BlogPost from './components/BlogPost';
 import Cocktails from './components/Cocktails';
 import WhereToBuy from './components/WhereToBuy';
+import Awards from './components/Awards';
 import AgeVerification from './components/AgeVerification';
 import { getLangFromPath } from './utils/i18n';
 
@@ -105,6 +106,7 @@ function App() {
           <Route path="/blog/:id" element={<RedirectBlogIdLegacy />} />
           <Route path="/cocktails" element={<RedirectToLangPath to="/cocktails" />} />
           <Route path="/where-to-buy" element={<RedirectToLangPath to="/where-to-buy" />} />
+          <Route path="/awards" element={<RedirectToLangPath to="/awards" />} />
 
           {/* Language-prefixed routes */}
           <Route path=":lang" element={<LangWithoutSlashRedirect />} />
@@ -115,6 +117,7 @@ function App() {
           <Route path=":lang/blog/:id" element={<BlogPost />} />
           <Route path=":lang/cocktails" element={<Cocktails />} />
           <Route path=":lang/where-to-buy" element={<WhereToBuy />} />
+          <Route path=":lang/awards" element={<Awards />} />
 
           {/* Fallback */}
           <Route path="*" element={<NotFoundRedirect />} />

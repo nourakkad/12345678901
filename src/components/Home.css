@@ -168,7 +168,7 @@ body.rtl .about-card .about-heading { direction: rtl; }
 .about-heading {
   width: 100%;
   text-align: center;
-  margin-bottom: 2.2rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,6 +231,9 @@ body.rtl .about-card .about-heading { direction: rtl; }
   position: relative;
   overflow: hidden;
 }
+
+/* Make all texts in Ingredients section bold */
+.ingredients * { font-weight: 700; }
 
 .ingredients-content {
   display: flex;
@@ -982,7 +985,7 @@ body.rtl .about-card .about-heading { direction: rtl; }
   font-family: 'Century Gothic', sans-serif;
   font-weight: 700;
   color: #222;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   font-size: 2rem;
   text-align: center;
   letter-spacing: 1px;

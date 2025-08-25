@@ -4,8 +4,12 @@
     "ourStory": "قصتنا",
     "gallery": "المعرض",
     "blog": "المدونة",
+    "awards": "الجوائز",
     "whereToBuy": "أماكن الشراء",
     "cta": "كوكتيل بليس"
+  },
+  "awards": {
+    "comingSoon": "قريباً"
   },
   "news": {
     "title": "الأخبار والفعاليات"

@@ -108,7 +108,7 @@ const OurStory: React.FC = () => {
             </div>
           </div>
           <div className="t2">
-            <p className="detail">
+            <p className="emphasis">
               {t(lang as any, 'ourStory.section3.detail')}
             </p>
           </div>
