@@ -383,17 +383,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <p className="footer-text">
-            © 2024 Damascus Gin. All rights reserved. Please drink responsibly.
-          </p>
-          <p className="powered-by">
-            {t(lang, 'footer.powered')} <a href="https://elyptek.com" target="_blank" rel="noopener noreferrer">{t(lang, 'footer.brand')}</a>
-          </p>
-        </div>
-      </footer>
+      {/* Footer is rendered globally in App.tsx */}
     </div>
   );
 };
