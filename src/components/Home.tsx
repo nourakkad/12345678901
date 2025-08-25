@@ -299,7 +299,7 @@ const Home: React.FC = () => {
 
       {/* News Section */}
       <section className="news-section">
-        <div className="news-cards-outer" style={{position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', width: 'fit-content', maxWidth: '100%', margin: '0 auto', overflow: 'hidden'}}>
+        <div className="news-cards-outer" style={{position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', width: 'fit-content', maxWidth: '100%', margin: '0 auto', overflow: 'visible'}}>
           <button
             className="news-nav news-nav-left"
             onClick={handlePrevNews}
