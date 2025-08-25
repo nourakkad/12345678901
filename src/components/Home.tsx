@@ -131,7 +131,7 @@ const Home: React.FC = () => {
       <section className="hero">
         <div className="hero-video-container">
           <video className="hero-video" autoPlay muted loop playsInline preload="auto">
-            <source src="/videos/hero-video.mp4" type="video/mp4" />
+            <source src="/videos/hero-video1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
