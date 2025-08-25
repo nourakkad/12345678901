@@ -58,7 +58,7 @@ body.rtl .nav-menu a::after { left: 50%; right: auto; transform: translateX(-50%
 /* Language dropdown */
 .nav-lang-btn { display: inline-flex; align-items: center; gap: 6px; background: #fff; border: 1px solid rgba(0,0,0,0.15); border-radius: 16px; padding: 4px 10px; font-size: 14px; line-height: 1; text-transform: none; letter-spacing: normal; }
 .nav-lang-btn .flag-img { width: 24px; height: 16px; border-radius: 2px; display: block; }
-.nav-lang-menu { position: absolute; top: 110%; left: 0; background: #fff; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); padding: 6px 10px; display: none; min-width: 70px; z-index: 1002; }
+.nav-lang-menu { position: absolute; top: 110%; left: 0; background: #fff; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); padding: 6px 10px; display: none; min-width: 70px; z-index: 2000; }
 .nav-lang-menu.open { display: block; }
 .lang-item { width: 100%; display: flex; align-items: center; justify-content: center; background: transparent; border: none; padding: 6px 0; border-radius: 6px; }
 .lang-item + .lang-item { border-top: 1px solid rgba(0,0,0,0.08); }

@@ -8,7 +8,8 @@ const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [lang, setLang] = useState<string>(() => localStorage.getItem('lang') || 'en');
-  const langRef = useRef<HTMLDivElement>(null);
+  const desktopLangRef = useRef<HTMLDivElement>(null);
+  const mobileLangRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -30,7 +31,10 @@ const Navigation: React.FC = () => {
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+      const target = e.target as Node;
+      const insideDesktop = desktopLangRef.current?.contains(target);
+      const insideMobile = mobileLangRef.current?.contains(target);
+      if (!insideDesktop && !insideMobile) {
         setIsLangOpen(false);
       }
     };
@@ -111,7 +115,7 @@ const Navigation: React.FC = () => {
                 <a href="https://tiktok.com" aria-label="TikTok"><i className="fab fa-tiktok"></i></a>
                 <a href="mailto:info@damascusgin.com" aria-label="Email"><i className="fas fa-envelope"></i></a>
               </div>
-              <div className="nav-lang" ref={langRef}>
+              <div className="nav-lang" ref={desktopLangRef}>
                 <button className="nav-lang-btn" onClick={() => setIsLangOpen((v) => !v)} aria-expanded={isLangOpen} aria-haspopup="menu">
                   <img className="flag-img" src={currentFlag(lang)} alt="current language" width={24} height={16} />
                   <span className="nav-lang-caret">▾</span>
@@ -175,7 +179,7 @@ const Navigation: React.FC = () => {
           </ul>
 
           <div className="nav-right">
-            <div className="nav-lang nav-lang-mobile" ref={langRef}>
+            <div className="nav-lang nav-lang-mobile" ref={mobileLangRef}>
               <button className="nav-lang-btn" onClick={() => setIsLangOpen((v) => !v)} aria-expanded={isLangOpen} aria-haspopup="menu">
                 <img className="flag-img" src={currentFlag(lang)} alt="current language" width={24} height={16} />
                 <span className="nav-lang-caret">▾</span>
