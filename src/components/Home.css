@@ -141,6 +141,10 @@ body.rtl .about-content {
 }
 .about-card { direction: ltr; }
 body.rtl .about-card .about-text { direction: rtl; text-align: right; }
+@media (max-width: 900px) {
+  body.rtl .ingredients-grid { direction: rtl; }
+  body.rtl .ingredient-card { direction: rtl; text-align: center; }
+}
 body.rtl .about-card .about-heading { direction: rtl; }
 .about-card {
   background: #2052d9;
@@ -950,7 +954,7 @@ body.rtl .about-card .about-heading { direction: rtl; }
   border: 1px solid rgba(255,255,255,0.35);
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  padding: 28px 24px;
+  padding: 28px 24px 72px 24px; /* extra bottom space for social icons on desktop */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1043,9 +1047,10 @@ body.rtl .about-card .about-heading { direction: rtl; }
   display: flex;
   gap: 18px;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   bottom: 16px;
+  transform: none;
   margin-top: 0;
   justify-content: center;
 }
@@ -1364,6 +1369,13 @@ body.rtl .about-card .about-heading { direction: rtl; }
 }
 
 @media (max-width: 480px) {
+  /* Ensure Ingredients section fully centers on very small screens */
+  .ingredients-grid { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; width: 100%; margin: 0 auto; text-align: center; }
+  .ingredient-center { display: flex; align-items: center; justify-content: center; }
+  .ingredient-spot { display: flex; align-items: center; justify-content: center; }
+  .ingredient-card { text-align: center; max-width: 92vw; }
+  body.rtl .ingredients-grid { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  body.rtl .ingredient-spot { display: flex; align-items: center; justify-content: center; }
   .hero-title {
     font-size: 2rem;
   }
@@ -1496,11 +1508,18 @@ body.rtl .about-card .about-heading { direction: rtl; }
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
     gap: 32px;
     min-height: 0;
+    width: 100%;
   }
   .ingredient-center {
     order: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   .ingredient-spot.rose { order: 2; }
   .ingredient-spot.lemon { order: 3; }
@@ -1519,7 +1538,11 @@ body.rtl .about-card .about-heading { direction: rtl; }
     max-width: 95vw;
     padding: 12px 10px;
     margin-top: 12px;
+    text-align: center;
   }
+  /* Force centering in RTL too */
+  body.rtl .ingredients-grid { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin: 0 auto; width: 100%; }
+  body.rtl .ingredient-center, body.rtl .ingredient-spot { display: flex; justify-content: center; align-items: center; }
 } 
 
 @keyframes fadeInZoom {

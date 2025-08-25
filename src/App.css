@@ -586,11 +586,9 @@ a {
 .animate-ease-out { animation-timing-function: cubic-bezier(0.0, 0, 0.2, 1); }
 .animate-ease-in-out { animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
-/* Focus styles for accessibility */
-*:focus {
-  outline: 2px solid var(--custom-color-1);
-  outline-offset: 2px;
-}
+/* Remove default focus ring globally (visual ring not desired) */
+*:focus { outline: none; outline-offset: 0; }
+*:focus-visible { outline: none; }
 
 /* Smooth scrolling */
 html {

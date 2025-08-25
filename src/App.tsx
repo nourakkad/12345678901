@@ -83,7 +83,7 @@ function App() {
       localStorage.setItem('ageVerified', 'true');
     } else {
       // Redirect to a different page or show message
-      alert('You must be 18 or over to view this content.');
+      alert('Your journey hasn’t started yet, young wanderer.');
     }
   };
 
