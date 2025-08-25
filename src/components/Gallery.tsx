@@ -79,7 +79,7 @@ const Gallery: React.FC = () => {
   }, [closeModal]);
 
   return (
-    <div className="gallery">
+    <div className="gallery" style={{ overflowX: 'hidden' }}>
       {/* Hero Section - Matching Our Story Design */}
       <section className="gallery-hero">
         <div className="container-grid">

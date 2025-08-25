@@ -116,7 +116,7 @@ const WhereToBuy: React.FC = () => {
   };
 
   return (
-    <div className="where-to-buy">
+    <div className="where-to-buy" style={{ overflowX: 'hidden' }}>
       {/* Hero Section - Matching Our Story Design */}
       <section className="buy-hero">
         <div className="container-grid">

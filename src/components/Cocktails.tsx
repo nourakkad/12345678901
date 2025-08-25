@@ -76,7 +76,7 @@ const Cocktails: React.FC = () => {
   }, [location.pathname]);
 
   return (
-    <div className="cocktails">
+    <div className="cocktails" style={{ overflowX: 'hidden' }}>
       {/* Hero Section - Matching Our Story Design */}
       <section className="cocktails-hero">
         <div className="container-grid">

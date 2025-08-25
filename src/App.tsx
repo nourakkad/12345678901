@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
@@ -30,6 +30,31 @@ function DirectionSetter() {
     };
   }, [location.pathname]);
   return null;
+}
+
+function RootRedirect() {
+  const location = useLocation();
+  const lang = getLangFromPath(location.pathname, 'en');
+  return <Navigate to={`/${lang}/`} replace />;
+}
+
+function LangWithoutSlashRedirect() {
+  const { pathname } = useLocation();
+  // pathname like /en -> redirect to /en/
+  return <Navigate to={`${pathname}/`} replace />;
+}
+
+function RedirectToLangPath({ to }: { to: string }) {
+  const location = useLocation();
+  const lang = getLangFromPath(location.pathname, 'en');
+  const clean = to.startsWith('/') ? to : `/${to}`;
+  return <Navigate to={`/${lang}${clean}`} replace />;
+}
+
+function NotFoundRedirect() {
+  const location = useLocation();
+  const lang = getLangFromPath(location.pathname, 'en');
+  return <Navigate to={`/${lang}/`} replace />;
 }
 
 function App() {
@@ -65,16 +90,17 @@ function App() {
       <div className="App">
         <Navigation />
         <Routes>
-          {/* Non-prefixed routes (backward compatibility) */}
-          <Route path="/" element={<Home />} />
-          <Route path="/our-story" element={<OurStory />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:id" element={<BlogPost />} />
-          <Route path="/cocktails" element={<Cocktails />} />
-          <Route path="/where-to-buy" element={<WhereToBuy />} />
+          {/* Redirect non-prefixed to language-prefixed */}
+          <Route path="/" element={<RootRedirect />} />
+          <Route path="/our-story" element={<RedirectToLangPath to="/our-story" />} />
+          <Route path="/gallery" element={<RedirectToLangPath to="/gallery" />} />
+          <Route path="/blog" element={<RedirectToLangPath to="/blog" />} />
+          <Route path="/blog/:id" element={<RedirectToLangPath to="/blog/${1}" />} />
+          <Route path="/cocktails" element={<RedirectToLangPath to="/cocktails" />} />
+          <Route path="/where-to-buy" element={<RedirectToLangPath to="/where-to-buy" />} />
 
           {/* Language-prefixed routes */}
+          <Route path=":lang" element={<LangWithoutSlashRedirect />} />
           <Route path=":lang/" element={<Home />} />
           <Route path=":lang/our-story" element={<OurStory />} />
           <Route path=":lang/gallery" element={<Gallery />} />
@@ -82,6 +108,9 @@ function App() {
           <Route path=":lang/blog/:id" element={<BlogPost />} />
           <Route path=":lang/cocktails" element={<Cocktails />} />
           <Route path=":lang/where-to-buy" element={<WhereToBuy />} />
+
+          {/* Fallback */}
+          <Route path="*" element={<NotFoundRedirect />} />
         </Routes>
       </div>
     </Router>

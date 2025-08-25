@@ -126,7 +126,7 @@ const Home: React.FC = () => {
   }, [newsIndex]);
 
   return (
-    <div className="home">
+    <div className="home" style={{ overflowX: 'hidden' }}>
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-video-container">
@@ -299,7 +299,7 @@ const Home: React.FC = () => {
 
       {/* News Section */}
       <section className="news-section">
-        <div className="news-cards-outer" style={{position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', width: 'fit-content', maxWidth: '100%', margin: '0 auto'}}>
+        <div className="news-cards-outer" style={{position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', width: 'fit-content', maxWidth: '100%', margin: '0 auto', overflow: 'hidden'}}>
           <button
             className="news-nav news-nav-left"
             onClick={handlePrevNews}

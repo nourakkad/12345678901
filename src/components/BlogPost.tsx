@@ -446,7 +446,7 @@ const BlogPost: React.FC = () => {
   }
 
   return (
-    <div className="blog-post">
+    <div className="blog-post" style={{ overflowX: 'hidden' }}>
       <div className="container">
         <div className="post-header">
           <button onClick={() => navigate('/blog')} className="back-btn">

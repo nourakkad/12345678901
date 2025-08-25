@@ -89,7 +89,11 @@ const Navigation: React.FC = () => {
       <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
           <div className="nav-left">
-            <Link to="/" className="nav-logo" onClick={closeMobileMenu}>
+            <Link 
+              to={['en','it','ar','es'].includes(location.pathname.split('/').filter(Boolean)[0]) ? `/${lang}/` : '/'} 
+              className="nav-logo" 
+              onClick={closeMobileMenu}
+            >
               <img 
                 src="/images/damascus-gin-logo-gold.png" 
                 alt="Damascus Gin Logo" 

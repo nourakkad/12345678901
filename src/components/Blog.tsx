@@ -81,7 +81,7 @@ const Blog: React.FC = () => {
   };
 
   return (
-    <div className="blog">
+    <div className="blog" style={{ overflowX: 'hidden' }}>
       {/* Hero Section - Matching Our Story Design */}
       <section className="blog-hero">
         <div className="container-grid">

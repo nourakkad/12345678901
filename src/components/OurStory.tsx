@@ -38,7 +38,7 @@ const OurStory: React.FC = () => {
   }, []);
 
   return (
-    <div className="our-story">
+    <div className="our-story" style={{ overflowX: 'hidden' }}>
       {/* Section One - as per provided design */}
       <section className="section-one">
         <div className="container-grid">
