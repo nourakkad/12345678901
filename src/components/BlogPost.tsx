@@ -27,40 +27,49 @@ const BlogPost: React.FC = () => {
   const blogPosts: BlogPostData[] = [
     {
       id: 1,
-      title: 'Damascus Gin Lands in Japan',
-      excerpt: 'Our flagship gin has been recognized for its exceptional quality and unique flavor profile at the prestigious International Spirits Competition.',
+      title: 'Damascus Gin Lands in Japan!',
+      excerpt: '',
       content: `
        <h2>Our Environmental Philosophy</h2>
-        <p>We are thrilled to announce that Damascus Gin has been awarded the prestigious Gold Medal at the International Spirits Competition, one of the most respected and influential spirits competitions in the world. This recognition validates our commitment to crafting exceptional gin using traditional methods and premium botanicals sourced from the Mediterranean region.</p>
+        <p>After several months travelling across the seas, the first shipment of Damascus Gin has officially arrived in Japan.</p>
+        <p>Following a few days at customs, Damascus Gin has finally made its debut on the “Land of the Samurai.” </p>
+        <p>Now available at The Ancient World shop, Damascus Gin is ready to bring a taste of the Levant to Japan, blending tradition and innovation in each bottle.</p>
+        <p>We hope it becomes a favorite among Japanese gin enthusiasts and paves the way for Damascus Gin to expand to other locations across the country. </p>
+        <p>Cheers to new beginnings in Japan!</p>
         
       
       `,
-      image: '/images/news/news-1.jpg',
-      date: '2024-01-15',
-      category: 'Awards',
+      image: '/images/news/blog-1.jpg',
+      date: '2024-06-29',
+      category: 'News',
       author: 'Damascus Gin Team',
       readTime: '5 min read'
     },
     {
       id: 2,
-      title: 'Our Second Batch is Underway',
-      excerpt: 'Discover the meticulous process behind crafting our signature gin, from botanical selection to the final distillation.',
+      title: 'Our Second Batch is Underway!',
+      excerpt: '',
       content: `
-       <h2>Our Environmental Philosophy</h2>
-        <p>Welcome to Damascus Distillery, where tradition meets innovation in the art of gin making. Today, we're taking you behind the scenes to explore the meticulous process that transforms carefully selected botanicals into our signature Damascus Gin.</p>
-        
        
+        <p>We're excited to announce that our second batch of Damascus Gin is officially in the works! Building on the success of our first batch, we’ve embarked on bottling, labelling, and packaging this latest production, ensuring that every bottle maintains the unique, high-quality expertise that defines Damascus Gin. Each bottle is carefully prepared by hand, with attention to detail at every stage, from start to finish.</p>
+        <p>We've just received a fresh batch of small roses from Damascus, which will be placed into small bags for each bottle. </p>
+        <p>This addition makes a perfect garnish, enhancing the unique experience of enjoying Damascus Gin.</p>
+        <p>Our small-batch, handcrafted process means that each production of Damascus Gin has slight flavor tones, giving every batch a distinctive character. </p>
+        <p>After extensive tasting sessions, we’re pleased with the outcome—the flavor of this second batch closely matches the first and may even be a touch more refined. </p>
+        <p>Looking ahead, we’re actively exploring opportunities to expand Damascus Gin's distribution throughout Europe and the Americas, eager to share our creation with new audiences across the globe.</p>
+        <p>We envision Damascus Gin sailing the seas, reaching gin enthusiasts worldwide who seek a spirit with a true story and taste. </p>
+        <p>Stay tuned as we bring Damascus Gin to even more people, one handcrafted bottle at a time!</p>
       `,
-      image: '/images/news/news-2.jpg',
-      date: '2024-01-10',
-      category: 'Production',
-      author: 'Master Distiller',
+      image: '/images/news/blog-2.jpg',
+      date: '2024-10-01',
+      category: 'News',
+      author: 'Damascus Gin Team',
       readTime: '7 min read'
     },
     {
       id: 3,
       title: 'A Greener Spirit',
-      excerpt: 'Damascus Gin’s Path to Sustainability',
+      excerpt: '',
       content: `
         <h2>Damascus Gin’s Path to Sustainability</h2>  
         <p>At Damascus Gin, we believe a good drink should do good too. Born in Lebanon, made with the finest ingredients from both Lebanon and Syria, our gin is more than a blend of botanicals—it's a statement of care for the environment and the communities around us.</p>
