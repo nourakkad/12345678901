@@ -36,21 +36,19 @@
     "next": "Next",
     "backToBlog": "Back to Blog",
     "posts": {
-      "1": { "title": "Damascus Gin Wins Gold at International Spirits Competition", "excerpt": "Our flagship gin has been recognized for its exceptional quality and unique flavor profile at the prestigious International Spirits Competition.", "category": "Awards" },
-      "2": { "title": "The Art of Craft Gin: Behind the Scenes at Damascus Distillery", "excerpt": "Discover the meticulous process behind crafting our signature gin, from botanical selection to the final distillation.", "category": "Production" },
-      "3": { "title": "New Seasonal Limited Edition: Damascus Gin Winter Spice", "excerpt": "Experience the warmth of winter with our new limited edition gin featuring seasonal spices and botanicals.", "category": "New Products" },
-      "4": { "title": "Sustainable Distilling: Our Commitment to the Environment", "excerpt": "Learn about our eco-friendly practices and commitment to sustainable production methods.", "category": "Sustainability" },
-      "5": { "title": "Cocktail Masterclass: Perfect Gin & Tonic with Damascus", "excerpt": "Join our master distiller for an exclusive tutorial on creating the perfect gin and tonic using Damascus Gin.", "category": "Events" },
-      "6": { "title": "The History of Gin in the Levant: A Cultural Journey", "excerpt": "Explore the rich history of gin production in the Middle East and how Damascus Gin continues this tradition.", "category": "History" }
-    },
+      "1": { "title": "Damascus Gin Lands in Japan", "excerpt": "", "category": "News" },
+      "2": { "title": "Our Second Batch is Underway", "excerpt": "", "category": "News" },
+      "3": { "title": "A Greener Spirit", "excerpt": "", "category": "News" },
+      "4": { "title": "The Story Continues – Batch No. 3", "excerpt": "", "category": "News" },
+      "5": { "title": "Planting the Future: 20 Syrian Juniper Trees ", "excerpt": "", "category": "News" }
+     },
     "details": {
-      "1": { "author": "Damascus Gin Team", "readTime": "5 min read", "content": "" },
-      "2": { "author": "Master Distiller", "readTime": "7 min read", "content": "" },
-      "3": { "author": "Product Development Team", "readTime": "6 min read", "content": "" },
-      "4": { "author": "Environmental Team", "readTime": "8 min read", "content": "" },
-      "5": { "author": "Master Distiller", "readTime": "10 min read", "content": "" },
-      "6": { "author": "Cultural Historian", "readTime": "12 min read", "content": "" }
-    }
+      "1": { "author": "Damascus Gin Team", "readTime": "2 min read", "content": "" },
+      "2": { "author": "Damascus Gin Team", "readTime": "3 min read", "content": "" },
+      "3": { "author": "Damascus Gin Team", "readTime": "2 min read", "content": "" },
+      "4": { "author": "Damascus Gin Team", "readTime": "6 min read", "content": "" },
+      "5": { "author": "Damascus Gin Team", "readTime": "4 min read", "content": "" }
+        }
   },
   "cocktails": {
     "heroTitle": "Cocktail Bliss",
@@ -216,7 +214,7 @@
     },
     "ingredients": {
       "rose": "Damascus Rose: Celebrated for its enchanting fragrance, recognized by UNESCO as part of Syria’s Intangible Cultural Heritage.",
-      "lemon": "Lemon: Adds a bright, zesty citrus note that lifts the gin’s flavor and aroma.",
+      "lemon": "Pomelo: Adds a bright, zesty citrus note that lifts the gin’s flavor and aroma.",
       "pistachio": "Aleppo Pistachio: Renowned for its rich, nutty flavor with a hint of sweetness, adding unique depth and complexity.",
       "juniper": "Juniper: Sourced from Syrian juniper trees in Mount Lebanon, delivering the classic piney notes that define gin."
     },
@@ -239,11 +237,11 @@
       "readMore": "READ MORE",
       "slide1": {
         "title": "Damascus Gin Lands in Japan!",
-        "text": "After several months travelling across the seas, the first shipment of Damascus Gin has officially arrived in Japan..."
+        "text": "After several months travelling acro..."
       },
       "slide2": {
         "title": "Our Second Batch is Underway!",
-        "text": "We’re excited to announce that our second batch of Damascus Gin is officially in the works..."
+        "text": "We’re excited to announce that our sec..."
       }
     },
     "cocktail": {

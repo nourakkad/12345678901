@@ -302,6 +302,7 @@
   position: relative;
   overflow: hidden;
   height: auto;
+  background: #f5f5f5;
 }
 
 .retailer-image img {
@@ -335,7 +336,8 @@
   .retailers-grid { grid-template-columns: 1fr; }
   .retailer-content { grid-template-columns: 1fr; min-height: auto; }
   
-  .retailer-image { height: 240px; min-height: 240px; }
+  .retailer-image { height: auto; min-height: 0; }
+  .retailer-image img { width: 100%; height: auto; object-fit: contain; }
   
   .retailer-header {
     flex-direction: column;
@@ -356,7 +358,8 @@
     padding: 1rem;
   }
   
-  .retailer-image { height: 200px; min-height: 200px; }
+  .retailer-image { height: auto; min-height: 0; }
+  .retailer-image img { width: 100%; height: auto; object-fit: contain; }
   
   .retailer-name {
     font-size: 1.2rem;

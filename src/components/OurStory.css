@@ -337,16 +337,15 @@
 }
 
 .section-three .emphasis {
-	font-size: 2.5rem;
-	font-weight: 700;
-	color: #1a1a1a;
-	line-height: 1.2;
+	font-size: 1.9rem;
+	color: #4a4a4a;
+	line-height: 1.6;
 	margin: 0;
 	font-family: 'Century Gothic', Arial, sans-serif;
 }
 
 .section-three .detail {
-	font-size: 1.1rem;
+	font-size: 1.9rem;
 	color: #4a4a4a;
 	line-height: 1.6;
 	margin: 0;

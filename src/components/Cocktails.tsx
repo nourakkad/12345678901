@@ -145,9 +145,9 @@ const Cocktails: React.FC = () => {
               <div className="recipe-ingredients">
                 <h3>{t(lang, 'cocktails.page.common.ingredients')}</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  <li><span style={{ marginRight: 8 }}>○</span><strong>{t(lang, 'cocktails.page.common.ingredientsLabel')}</strong></li>
+                  <li><span style={{ marginRight: 8 }}></span><strong>{t(lang, 'cocktails.page.common.ingredientsLabel')}</strong></li>
                   {(currentDict.cocktails.page.dream.ingredients as string[]).map((item: string, idx: number) => (
-                    <li key={idx}><span style={{ marginRight: 8 }}>○</span>{item}</li>
+                    <li key={idx}><span style={{ marginRight: 8 }}></span>{item}</li>
                   ))}
                 </ul>
               </div>

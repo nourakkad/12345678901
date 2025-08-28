@@ -18,51 +18,43 @@ const Blog: React.FC = () => {
   const newsData = [
     {
       id: 1,
-      title: 'Damascus Gin Wins Gold at International Spirits Competition',
+      title: 'Damascus Gin Lands in Japan',
       excerpt: 'Our flagship gin has been recognized for its exceptional quality and unique flavor profile at the prestigious International Spirits Competition.',
-      image: '/images/news/news-1.jpg',
+      image: '/images/news/blog-1.jpg',
       date: '2024-01-15',
-      category: 'Awards'
+      category: 'News'
     },
     {
       id: 2,
-      title: 'The Art of Craft Gin: Behind the Scenes at Damascus Distillery',
+      title: 'Our Second Batch is Underway',
       excerpt: 'Discover the meticulous process behind crafting our signature gin, from botanical selection to the final distillation.',
-      image: '/images/news/news-2.jpg',
+      image: '/images/news/blog-2.jpg',
       date: '2024-01-10',
-      category: 'Production'
+      category: 'News'
     },
     {
       id: 3,
-      title: 'New Seasonal Limited Edition: Damascus Gin Winter Spice',
-      excerpt: 'Experience the warmth of winter with our new limited edition gin featuring seasonal spices and botanicals.',
-      image: '/images/news/news-1.jpg',
-      date: '2024-01-05',
-      category: 'New Products'
+      title: 'A Greener Spirit',
+      excerpt: '',
+      image: '/images/news/blog-3.jpg',
+      date: '2025-05-20',
+      category: 'News'
     },
     {
       id: 4,
-      title: 'Sustainable Distilling: Our Commitment to the Environment',
-      excerpt: 'Learn about our eco-friendly practices and commitment to sustainable production methods.',
-      image: '/images/news/news-2.jpg',
-      date: '2023-12-28',
-      category: 'Sustainability'
+      title: 'The Story Continues',
+      excerpt: '',
+      image: '/images/news/blog-4.jpg',
+      date: '2025-06-28',
+      category: 'News'
     },
     {
       id: 5,
-      title: 'Cocktail Masterclass: Perfect Gin & Tonic with Damascus',
-      excerpt: 'Join our master distiller for an exclusive tutorial on creating the perfect gin and tonic using Damascus Gin.',
-      image: '/images/news/news-1.jpg',
-      date: '2023-12-20',
-      category: 'Events'
-    },
-    {
-      id: 6,
-      title: 'The History of Gin in the Levant: A Cultural Journey',
-      excerpt: 'Explore the rich history of gin production in the Middle East and how Damascus Gin continues this tradition.',
-      image: '/images/news/news-2.jpg',
-      date: '2023-12-15',
-      category: 'History'
+      title: 'Planting the Future',
+      excerpt: '',
+      image: '/images/news/blog-5.jpg',
+      date: '2025-08-28',
+      category: 'News'
     }
   ];
 
