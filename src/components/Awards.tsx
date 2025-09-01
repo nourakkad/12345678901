@@ -35,8 +35,8 @@ const Awards: React.FC = () => {
         </div>
         <div className="awards-media">
           <div className="awards-photos">
-            <img src="/images/awards/1.jpg" alt="Damascus Gin awards photo 1" loading="lazy" decoding="async" />
-            <img src="/images/awards/2.jpg" alt="Damascus Gin awards photo 2" loading="lazy" decoding="async" />
+            <img src="/images/awards/1.jpg" alt="Damascus Gin awards 1" loading="lazy" decoding="async" />
+            <img src="/images/awards/2.jpg" alt="Damascus Gin awards 2" loading="lazy" decoding="async" />
           </div>
           <div className={`awards-video ${isPlaying ? 'playing' : ''}`}>
             <video
