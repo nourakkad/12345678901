@@ -300,10 +300,35 @@
   color: #555;
   font-size: 0.95rem;
   line-height: 1.6;
+  position: relative;
+  padding-left: 1.25rem;
 }
 
 .recipe-ingredients li:last-child {
   border-bottom: none;
+}
+
+/* Golden bullet for all ingredients */
+.recipe-ingredients li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.95rem;
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(135deg, #c9a227, #b48d1b);
+  border-radius: 50%;
+}
+
+/* RTL support for Arabic */
+[dir="rtl"] .recipe-ingredients li {
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
+
+[dir="rtl"] .recipe-ingredients li::before {
+  left: auto;
+  right: 0;
 }
 
 .recipe-ingredients strong {
@@ -409,21 +434,7 @@
   background: linear-gradient(135deg, #c9a227, #b48d1b);
 }
 
-.container > .recipe-section:first-of-type .recipe-ingredients li {
-  position: relative;
-  padding-left: 1.25rem;
-}
-
-.container > .recipe-section:first-of-type .recipe-ingredients li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.95rem;
-  width: 6px;
-  height: 6px;
-  background: linear-gradient(135deg, #c9a227, #b48d1b);
-  border-radius: 50%;
-}
+/* (Removed) special-case bullets for the first recipe; now applied globally */
 
 .container > .recipe-section:first-of-type .cocktail-image {
   border-radius: 16px;

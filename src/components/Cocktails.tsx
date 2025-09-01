@@ -109,13 +109,13 @@ const Cocktails: React.FC = () => {
           <div className="recipe-right">
             <div className="cocktail-image">
               <img 
-                src="https://midnightblue-ram-449596.hostingersite.com/wp-content/uploads/2024/10/Untitled13.jpg" 
+                src="/images/cocktails/intro.png" 
                 alt="Damascus Gin feature"
                 loading="lazy"
                 decoding="async"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
-                  target.src = '/images/damascus-gin-logo.png';
+                  target.src = '/images/cocktails/intro.png';
                 }}
               />
               <div className="image-overlay">
@@ -145,7 +145,6 @@ const Cocktails: React.FC = () => {
               <div className="recipe-ingredients">
                 <h3>{t(lang, 'cocktails.page.common.ingredients')}</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  <li><span style={{ marginRight: 8 }}></span><strong>{t(lang, 'cocktails.page.common.ingredientsLabel')}</strong></li>
                   {(currentDict.cocktails.page.dream.ingredients as string[]).map((item: string, idx: number) => (
                     <li key={idx}><span style={{ marginRight: 8 }}></span>{item}</li>
                   ))}
@@ -174,13 +173,13 @@ const Cocktails: React.FC = () => {
             <div className="recipe-right">
               <div className="cocktail-image">
                 <img 
-                  src="https://midnightblue-ram-449596.hostingersite.com/wp-content/uploads/2024/10/Untitled-5.jpg" 
+                  src="/images/cocktails/dream.jpg" 
                   alt="Damascus Dream Cocktail"
                   loading="lazy"
                   decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = '/images/damascus-gin-logo.png';
+                    target.src = '/images/cocktails/dream.jpg';
                   }}
                 />
                 <div className="image-overlay">
@@ -209,9 +208,8 @@ const Cocktails: React.FC = () => {
               <div className="recipe-ingredients">
                 <h3>{t(lang, 'cocktails.page.common.ingredients')}</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  <li><span style={{ marginRight: 8 }}>○</span><strong>{t(lang, 'cocktails.page.common.ingredientsLabel')}</strong></li>
                   {(currentDict.cocktails.page.mojito.ingredients as string[]).map((item: string, idx: number) => (
-                    <li key={idx}><span style={{ marginRight: 8 }}>○</span>{item}</li>
+                    <li key={idx}><span style={{ marginRight: 8 }}></span>{item}</li>
                   ))}
                 </ul>
               </div>
@@ -238,13 +236,13 @@ const Cocktails: React.FC = () => {
             <div className="recipe-right">
               <div className="cocktail-image">
                 <img 
-                  src="https://midnightblue-ram-449596.hostingersite.com/wp-content/uploads/2024/10/Untitled-6.jpg" 
+                  src="/images/cocktails/mojito.jpg" 
                   alt="Damascus Gin Mojito"
                   loading="lazy"
                   decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = '/images/damascus-gin-logo.png';
+                    target.src = '/images/cocktails/mojito.jpg';
                   }}
                 />
                 <div className="image-overlay">
@@ -273,9 +271,8 @@ const Cocktails: React.FC = () => {
               <div className="recipe-ingredients">
                 <h3>{t(lang, 'cocktails.page.common.ingredients')}</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  <li><span style={{ marginRight: 8 }}>○</span><strong>{t(lang, 'cocktails.page.common.ingredientsLabel')}</strong></li>
                   {(currentDict.cocktails.page.sultan.ingredients as string[]).map((item: string, idx: number) => (
-                    <li key={idx}><span style={{ marginRight: 8 }}>○</span>{item}</li>
+                    <li key={idx}><span style={{ marginRight: 8 }}></span>{item}</li>
                   ))}
                 </ul>
               </div>
@@ -302,13 +299,13 @@ const Cocktails: React.FC = () => {
             <div className="recipe-right">
               <div className="cocktail-image">
                 <img 
-                  src="https://midnightblue-ram-449596.hostingersite.com/wp-content/uploads/2024/10/Untitled-7.jpg" 
+                  src="/images/cocktails/sultan.jpg" 
                   alt="The Sultan's Spritz"
                   loading="lazy"
                   decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = '/images/damascus-gin-logo.png';
+                    target.src = '/images/cocktails/sultan.jpg';
                   }}
                 />
                 <div className="image-overlay">
@@ -337,9 +334,8 @@ const Cocktails: React.FC = () => {
               <div className="recipe-ingredients">
                 <h3>{t(lang, 'cocktails.page.common.ingredients')}</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  <li><span style={{ marginRight: 8 }}>○</span><strong>{t(lang, 'cocktails.page.common.ingredientsLabel')}</strong></li>
                   {(currentDict.cocktails.page.oasis.ingredients as string[]).map((item: string, idx: number) => (
-                    <li key={idx}><span style={{ marginRight: 8 }}>○</span>{item}</li>
+                    <li key={idx}><span style={{ marginRight: 8 }}></span>{item}</li>
                   ))}
                 </ul>
               </div>
@@ -366,13 +362,13 @@ const Cocktails: React.FC = () => {
             <div className="recipe-right">
               <div className="cocktail-image">
                 <img 
-                  src="https://midnightblue-ram-449596.hostingersite.com/wp-content/uploads/2024/10/Untitled-8.jpg" 
+                  src="/images/cocktails/oasis.jpg" 
                   alt="Oasis Breeze"
                   loading="lazy"
                   decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = '/images/damascus-gin-logo.png';
+                    target.src = '/images/cocktails/oasis.jpg';
                   }}
                 />
                 <div className="image-overlay">
