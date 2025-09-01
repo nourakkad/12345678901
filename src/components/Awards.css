@@ -41,11 +41,11 @@
 .awards-headline {
   font-family: 'Montserrat','Century Gothic',Arial,sans-serif;
   font-weight: 700;
-  font-style: italic;
-  color: #1a1a1a;
+  font-style: normal;
+  color: #2350d7;
   margin: 8px 0 16px 0;
-  font-size: 1rem;
-  line-height: 1.2;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  line-height: 1.25;
 }
 
 .awards-body {
