@@ -9,7 +9,17 @@
     "cta": "Cocktail Bliss"
   },
   "awards": {
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "section": {
+      "headline": "Damascus Gin wins “Best in Lebanon” and gains global recognition at the Gin Guide Awards 2025.",
+      "paragraphs": [
+        "Damascus Gin, a handcrafted small-batch spirit inspired by the Levant, has won Best in Lebanon 2025 at the Gin Guide Awards, one of the most respected competitions in the spirits world. It also received a Highly Commended distinction in the Contemporary Gin (up to 42% ABV) category, ranking it among the top-rated gins globally.",
+        "With hundreds of entries from 32 countries, the Gin Guide Awards is known for blind tastings and strict standards. For Damascus Gin, this recognition is especially meaningful as the brand is still new—making the achievement both rare and remarkable.",
+        "The Best in Lebanon title was earned by scoring highest among all Lebanese gins entered, meeting the competition’s criteria for national awards. The Highly Commended badge means Damascus Gin was just behind global category winners in quality and score.",
+        "“This means so much to us,” said the founders. “We created Damascus Gin to carry memories, care, and something personal in every bottle. Being recognized like this, so early on, is incredibly moving. It reminds us why we started, and gives us even more reason to keep going.”",
+        "The awards come with international publicity and open new doors for distribution, partnerships, and global visibility."
+      ]
+    }
   },
   "news": {
     "title": "News & Events"

@@ -9,7 +9,17 @@
     "cta": "Cocktail Bliss"
   },
   "awards": {
-    "comingSoon": "Próximamente"
+    "comingSoon": "Próximamente",
+    "section": {
+      "headline": "Damascus Gin gana “Mejor de Líbano” y obtiene reconocimiento global en los Gin Guide Awards 2025",
+      "paragraphs": [
+        "Damascus Gin, una ginebra artesanal de pequeños lotes inspirada en el Levante, ha sido galardonada como la Mejor de Líbano 2025 en los Gin Guide Awards, uno de los certámenes más prestigiosos del mundo de ginebras. Además, recibió la distinción Highly Commended en la categoría de ginebra contemporánea (hasta 42% de alcohol), lo que lo sitúa entre las ginebras mejor valoradas a nivel mundial.",
+        "Con cientos de inscripciones de 32 países, los Gin Guide Awards son reconocidos por sus catas a ciegas y estrictos estándares de evaluación. Para Damascus Gin, este reconocimiento es especialmente significativo al tratarse de una marca aún joven, lo que hace que el logro sea a la vez especial y extraordinario.",
+        "El título de Mejor de Líbano se obtuvo al alcanzar la puntuación más alta entre todas las ginebras libanesas presentadas, cumpliendo con los criterios del certamen para los premios nacionales. La mención Highly Commended significa que Damascus Gin quedó apenas por detrás de los ganadores globales de su categoría en calidad y puntuación.",
+        "“Esto significa muchísimo para nosotros”, dijeron los fundadores. “Creamos Damascus Gin con la intencion de expresar  algo personal en cada botella. Ser reconocidos de esta manera, tan pronto, nos emociona profundamente. Nos recuerda por qué empezamos y nos da aún más motivos para seguir adelante”.",
+        "El premio trae consigo visibilidad internacional y abre nuevas puertas para la distribución, las ventas y el posicionamiento global."
+      ]
+    }
   },
   "news": {
     "title": "Noticias y Eventos"

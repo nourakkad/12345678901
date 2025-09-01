@@ -9,7 +9,17 @@
     "cta": "Cocktail Bliss"
   },
   "awards": {
-    "comingSoon": "In arrivo"
+    "comingSoon": "In arrivo",
+    "section": {
+      "headline": "Damascus Gin vince “Miglior Gin del Libano” e ottiene riconoscimento globale ai Gin Guide Awards 2025",
+      "paragraphs": [
+        "Damascus Gin, un gin artigianale in piccoli lotti ispirato al Levante, è stato premiato come Miglior Gin del Libano 2025 ai Gin Guide Awards, uno dei concorsi più prestigiosi nel mondo dei gin. Inoltre, ha ricevuto la menzione Highly Commended nella categoria gin contemporaneo (fino al 42% di alcol), posizionandosi tra i gin più apprezzati a livello internazionale.",
+        "Con centinaia di candidature provenienti da 32 paesi, i Gin Guide Awards sono conosciuti per le degustazioni alla cieca e i rigorosi criteri di valutazione. Per Damascus Gin, questo riconoscimento è particolarmente significativo essendo ancora un marchio giovane, rendendo il traguardo al tempo stesso speciale ed eccezionale.",
+        "Il titolo di Miglior Gin del Libano è stato ottenuto raggiungendo il punteggio più alto tra tutti i gin libanesi presentati, rispettando i criteri del concorso per i premi nazionali. La menzione Highly Commended significa che Damascus Gin si è classificato appena dietro i vincitori globali della sua categoria per qualità e punteggio.",
+        "“Per noi significa tantissimo”, hanno dichiarato i fondatori. “Abbiamo creato Damascus Gin con l’intenzione di trasmettere qualcosa di personale in ogni bottiglia. Essere riconosciuti in questo modo, così presto, ci emoziona profondamente. Ci ricorda perché abbiamo iniziato e ci dà ancora più motivi per andare avanti”.",
+        "Il premio porta con sé visibilità internazionale e apre nuove opportunità per la distribuzione, le vendite e il posizionamento globale."
+      ]
+    }
   },
   "news": {
     "title": "Notizie & Eventi"
