@@ -364,7 +364,37 @@ const Home: React.FC = () => {
                 <label htmlFor="message">{t(lang, 'home.contact.message')}</label>
                 <textarea id="message" name="message" required></textarea>
               </div>
-              <button type="submit" className="contact-submit">{t(lang, 'home.contact.submit')}</button>
+              <button
+                type="button"
+                className="contact-submit"
+                onClick={async (e) => {
+                  e.preventDefault();
+                  const form = (e.currentTarget as HTMLButtonElement).closest('form');
+                  if (!form) return;
+                  const emailInput = form.querySelector('#email') as HTMLInputElement | null;
+                  const messageInput = form.querySelector('#message') as HTMLTextAreaElement | null;
+                  const email = emailInput?.value?.trim();
+                  const message = messageInput?.value?.trim();
+                  if (!email || !message) return;
+                  try {
+                    const res = await fetch('/.netlify/functions/send-email', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ email, message }),
+                    });
+                    if (res.ok) {
+                      alert('Message sent successfully. We\'ll get back to you soon.');
+                      form.reset();
+                    } else {
+                      alert('Failed to send. Please try again later.');
+                    }
+                  } catch (err) {
+                    alert('Network error. Please try again later.');
+                  }
+                }}
+              >
+                {t(lang, 'home.contact.submit')}
+              </button>
             </form>
             <div className="contact-social">
               <a href="https://www.instagram.com/damascus_gin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
