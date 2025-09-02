@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
-import { getLangFromPath, t } from '../utils/i18n';
+import './Blog.css';
+import { getLangFromPath, t, Lang } from '../utils/i18n';
 import { useLocation, Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
@@ -31,30 +32,27 @@ const Home: React.FC = () => {
   const symphonyImg1Ref = useRef<HTMLDivElement>(null);
   const symphonyImg2Ref = useRef<HTMLDivElement>(null);
   const symphonyImg3Ref = useRef<HTMLDivElement>(null);
-  // News card refs
+  // Blog posts (same source as Blog.tsx)
+  const blogPosts = [
+    { id: 1, title: 'Damascus Gin Lands in Japan', image: '/images/news/blog-1.jpg', date: '2024-01-15', category: 'News' },
+    { id: 2, title: 'Our Second Batch is Underway', image: '/images/news/blog-2.jpg', date: '2024-01-10', category: 'News' },
+    { id: 3, title: 'A Greener Spirit', image: '/images/news/blog-3.jpg', date: '2025-05-20', category: 'News' },
+    { id: 4, title: 'The Story Continues', image: '/images/news/blog-4.jpg', date: '2025-06-28', category: 'News' },
+    { id: 5, title: 'Planting the Future', image: '/images/news/blog-5.jpg', date: '2025-08-28', category: 'News' }
+  ];
+  // Carousel state for blog slides
   const newsImageRef = useRef<HTMLDivElement>(null);
   const newsTextRef = useRef<HTMLDivElement>(null);
-
-  // News carousel state
   const [newsIndex, setNewsIndex] = useState(0);
   const [isSmallScreen, setIsSmallScreen] = useState<boolean>(() => (typeof window !== 'undefined' ? window.innerWidth < 900 : false));
-  const newsSlides = [
-    {
-      image: '/images/news/news-1.jpg',
-      title: t(lang, 'home.news.slide1.title'),
-      text: t(lang, 'home.news.slide1.text'),
-      link: '/blog',
-    },
-    {
-      image: '/images/news/news-2.jpg',
-      title: t(lang, 'home.news.slide2.title'),
-      text: t(lang, 'home.news.slide2.text'),
-      link: '/blog',
-    },
-    
-  ];
-  const handlePrevNews = () => setNewsIndex((prev) => (prev === 0 ? newsSlides.length - 1 : prev - 1));
-  const handleNextNews = () => setNewsIndex((prev) => (prev === newsSlides.length - 1 ? 0 : prev + 1));
+  const blogSlides = blogPosts.map((post) => ({
+    image: post.image,
+    title: t(lang as Lang, `blog.posts.${post.id}.title`),
+    text: t(lang as Lang, `blog.posts.${post.id}.excerpt`),
+    link: `/${lang}/blog/${post.id}`,
+  }));
+  const handlePrevNews = () => setNewsIndex((prev) => (prev === 0 ? blogSlides.length - 1 : prev - 1));
+  const handleNextNews = () => setNewsIndex((prev) => (prev === blogSlides.length - 1 ? 0 : prev + 1));
 
   // Cocktail and Contact section refs (last two sections)
   const cocktailCardRef = useRef<HTMLDivElement>(null);
@@ -100,6 +98,7 @@ const Home: React.FC = () => {
       checkInView(symphonyImg1Ref);
       checkInView(symphonyImg2Ref);
       checkInView(symphonyImg3Ref);
+      // animate blog carousel cards
       checkInView(newsImageRef);
       checkInView(newsTextRef);
       checkInView(cocktailCardRef);
@@ -111,14 +110,13 @@ const Home: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Re-trigger news card animations on slide change
+  // Re-trigger animations on slide change
   useEffect(() => {
     const imageEl = newsImageRef.current;
     const textEl = newsTextRef.current;
     if (!imageEl || !textEl) return;
     imageEl.classList.remove('in-view');
     textEl.classList.remove('in-view');
-    // Force reflow to restart CSS animation
     void imageEl.offsetWidth;
     void textEl.offsetWidth;
     imageEl.classList.add('in-view');
@@ -297,13 +295,13 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* News Section */}
+      {/* Blog Carousel Section (keeps original News carousel styling) */}
       <section className="news-section">
         <div className="news-cards-outer" style={{position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', width: 'fit-content', maxWidth: '100%', margin: '0 auto', overflow: 'visible'}}>
           <button
             className="news-nav news-nav-left"
             onClick={handlePrevNews}
-            aria-label="Previous News"
+            aria-label="Previous"
             style={{
               position: 'absolute',
               left: isSmallScreen ? '8px' : '-48px',
@@ -315,22 +313,22 @@ const Home: React.FC = () => {
           <div className="news-cards">
             <div className="news-card-image" ref={newsImageRef}>
               <img 
-                src={newsSlides[newsIndex].image}
-                alt="News"
+                src={blogSlides[newsIndex].image}
+                alt={blogSlides[newsIndex].title}
                 loading="lazy"
                 decoding="async"
               />
             </div>
             <div className="news-card-text" ref={newsTextRef}>
-              <h3>{newsSlides[newsIndex].title}</h3>
-              <p>{newsSlides[newsIndex].text}</p>
-              <a href={newsSlides[newsIndex].link} className="news-card-btn">{t(lang, 'home.news.readMore')}</a>
+              <h3>{blogSlides[newsIndex].title}</h3>
+              <p>{blogSlides[newsIndex].text}</p>
+              <Link to={blogSlides[newsIndex].link} className="news-card-btn">{t(lang, 'home.news.readMore')}</Link>
             </div>
           </div>
           <button
             className="news-nav news-nav-right"
             onClick={handleNextNews}
-            aria-label="Next News"
+            aria-label="Next"
             style={{
               position: 'absolute',
               right: isSmallScreen ? '8px' : '-48px',
@@ -341,7 +339,7 @@ const Home: React.FC = () => {
           >&#8594;</button>
         </div>
         <div className="news-dots">
-          {newsSlides.map((_, idx) => (
+          {blogSlides.map((_, idx) => (
             <span key={idx} className={`news-dot${newsIndex === idx ? ' active' : ''}`}></span>
           ))}
         </div>
