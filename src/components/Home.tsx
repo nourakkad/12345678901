@@ -376,6 +376,12 @@ const Home: React.FC = () => {
                   const email = emailInput?.value?.trim();
                   const message = messageInput?.value?.trim();
                   if (!email || !message) return;
+                  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                  if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address.');
+                    emailInput?.focus();
+                    return;
+                  }
                   try {
                     const res = await fetch('/.netlify/functions/send-email', {
                       method: 'POST',
