@@ -367,11 +367,14 @@ const Home: React.FC = () => {
               <button type="submit" className="contact-submit">{t(lang, 'home.contact.submit')}</button>
             </form>
             <div className="contact-social">
-              <a href="https://instagram.com" aria-label="Instagram">
+              <a href="https://www.instagram.com/damascus_gin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://facebook.com" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=61562533851090" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.tiktok.com/@damascusgin" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-tiktok"></i>
               </a>
               <a href="mailto:info@damascusgin.com" aria-label="Email">
                 <i className="fas fa-envelope"></i>

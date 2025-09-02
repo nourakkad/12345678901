@@ -111,9 +111,9 @@ const Navigation: React.FC = () => {
             </Link>
             <div className="nav-left-footer">
               <div className="nav-social">
-                <a href="https://instagram.com" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-                <a href="https://facebook.com" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-                <a href="https://tiktok.com" aria-label="TikTok"><i className="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/damascus_gin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61562533851090" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@damascusgin" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a>
                 <a href="mailto:info@damascusgin.com" aria-label="Email"><i className="fas fa-envelope"></i></a>
               </div>
               <div className="nav-lang" ref={desktopLangRef}>
