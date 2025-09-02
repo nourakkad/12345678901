@@ -4,50 +4,58 @@ import { getLangFromPath, t } from '../utils/i18n';
 
 const Gallery: React.FC = () => {
   const lang = getLangFromPath(window.location.pathname);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedItem, setSelectedItem] = useState<{ type: 'image' | 'video'; src: string; poster?: string } | null>(null);
 
-  const galleryData = [
+  const galleryData: Array<{
+    id: number;
+    title: string;
+    description: string;
+    image?: string;
+    video?: string;
+    poster?: string;
+    category: string;
+  }> = [
     {
       id: 1,
-      title: 'Damascus Gin Bottle',
-      description: 'Our signature gin bottle featuring traditional Middle Eastern design elements',
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
       image: '/images/gallery/Untitled-110.webp',
-      category: 'bottles'
+      category: 'experience'
     },
     {
       id: 2,
-      title: 'Craft Distillation Process',
-      description: 'Behind the scenes of our traditional distillation methods',
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
       image: '/images/gallery/Untitled16.webp',
-      category: 'process'
+      category: 'experience'
     },
     {
       id: 3,
-      title: 'Botanical Selection',
-      description: 'Carefully selected botanicals from the Mediterranean region',
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
       image: '/images/gallery/Untitled-9.webp',
-      category: 'ingredients'
+      category: 'experience'
     },
     {
       id: 4,
-      title: 'Damascus Gin Ingredients',
-      description: 'Premium ingredients and botanicals used in our distillation process',
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
       image: '/images/gallery/2.webp',
-      category: 'ingredients'
+      category: 'experience'
     },
     {
       id: 5,
-      title: 'Distillation Process',
-      description: 'Traditional craftsmanship in our distillation facility',
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
       image: '/images/gallery/3.webp',
-      category: 'process'
+      category: 'experience'
     },
     {
       id: 6,
-      title: 'Damascus Gin Presentation',
-      description: 'Elegant presentation and packaging of our signature gin',
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
       image: '/images/gallery/6.webp',
-      category: 'bottles'
+      category: 'experience'
     },
     {
       id: 7,
@@ -55,15 +63,73 @@ const Gallery: React.FC = () => {
       description: 'The complete Damascus Gin experience and tasting',
       image: '/images/gallery/1 (1).webp',
       category: 'experience'
-    }
+    },
+    {
+      id: 8,
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
+      image: '/images/gallery/PHOTO 1.jpeg',
+      category: 'experience'
+    },
+    {
+      id: 9,
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
+      image: '/images/gallery/PHOTO 2.jpeg',
+      category: 'experience'
+    },
+    {
+      id: 10,
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
+      image: '/images/gallery/PHOTO 3.jpeg',
+      category: 'experience'
+    },
+    {
+      id: 11,
+      title: 'Damascus Gin Experience',
+      description: 'The complete Damascus Gin experience and tasting',
+      image: '/images/gallery/PHOTO 4.jpeg',
+      category: 'experience'
+    },
+    { id: 12, title: 'Damascus Gin Experience', 
+      description: 'The complete Damascus Gin experience and tasting', 
+      video: '/images/gallery/VIDEO 1.mp4', 
+      poster: '/images/gallery/clip2-poster.jpg', 
+      category: 'experience' 
+    },
+      { id: 13, title: 'Damascus Gin Experience', 
+      description: 'The complete Damascus Gin experience and tasting', 
+      video: '/images/gallery/VIDEO 2.mp4', 
+      poster: '/images/gallery/clip2-poster.jpg', 
+      category: 'experience' 
+    },
+    { id: 14, title: 'Damascus Gin Experience', 
+      description: 'The complete Damascus Gin experience and tasting', 
+      video: '/images/gallery/VIDEO 3.mp4', 
+      poster: '/images/gallery/clip2-poster.jpg', 
+      category: 'experience' 
+    },
+    { id: 15, title: 'Damascus Gin Experience', 
+      description: 'The complete Damascus Gin experience and tasting', 
+      video: '/images/gallery/VIDEO 4.mp4', 
+      poster: '/images/gallery/clip2-poster.jpg', 
+      category: 'experience' 
+    },
+    // Example video item (add more by providing video and optional poster)
+    // { id: 12, title: 'Distillery Video', description: 'Short walkthrough', video: '/videos/gallery/clip1.mp4', poster: '/images/gallery/clip1-poster.jpg', category: 'process' }
   ];
 
-  const openModal = (image: string) => {
-    setSelectedImage(image);
+  const openModal = (item: typeof galleryData[number]) => {
+    if (item.video) {
+      setSelectedItem({ type: 'video', src: item.video, poster: item.poster || item.image });
+    } else if (item.image) {
+      setSelectedItem({ type: 'image', src: item.image });
+    }
   };
 
   const closeModal = useCallback(() => {
-    setSelectedImage(null);
+    setSelectedItem(null);
   }, []);
 
   // Add keyboard event listener for ESC key
@@ -96,17 +162,30 @@ const Gallery: React.FC = () => {
         <section className="gallery-section">
           <div className="gallery-grid">
             {galleryData.map((item) => (
-              <div key={item.id} className="gallery-item" onClick={() => openModal(item.image)}>
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  loading="lazy"
-                  decoding="async"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = '/images/damascus-gin-logo.png';
-                  }}
-                />
+              <div key={item.id} className="gallery-item" onClick={() => openModal(item)}>
+                {item.video ? (
+                  <>
+                    <video 
+                      className="gallery-video-thumb"
+                      
+                      preload="auto"
+                    >
+                      <source src={item.video} type="video/mp4" />
+                    </video>
+                    <div className="play-icon">▶</div>
+                  </>
+                ) : (
+                  <img 
+                    src={item.image!} 
+                    alt={item.title}
+                    loading="lazy"
+                    decoding="async"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = '/images/damascus-gin-logo.png';
+                    }}
+                  />
+                )}
                 <div className="gallery-item-overlay">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
@@ -118,11 +197,17 @@ const Gallery: React.FC = () => {
       </div>
 
       {/* Modal */}
-      {selectedImage && (
-        <div className="modal" onClick={closeModal}>
+      {selectedItem && (
+        <div className={`modal ${selectedItem.type === 'video' ? 'fullscreen' : ''}`} onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={closeModal}>×</button>
-            <img src={selectedImage} alt="Gallery" />
+            {selectedItem.type === 'video' ? (
+              <video controls autoPlay playsInline style={{ width: '100%', height: '100%' }}>
+                <source src={selectedItem.src} type="video/mp4" />
+              </video>
+            ) : (
+              <img src={selectedItem.src} alt="Gallery" />
+            )}
           </div>
         </div>
       )}
