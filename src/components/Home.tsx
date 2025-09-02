@@ -385,6 +385,8 @@ const Home: React.FC = () => {
                     if (res.ok) {
                       alert('Message sent successfully. We\'ll get back to you soon.');
                       form.reset();
+                      window.scrollTo({ top: 0, behavior: 'auto' });
+                      window.location.reload();
                     } else {
                       alert('Failed to send. Please try again later.');
                     }
