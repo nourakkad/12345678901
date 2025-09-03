@@ -287,6 +287,22 @@ const Navigation: React.FC = () => {
           <li>
             <Link to={pathWithLang('/cocktails')} onClick={closeMobileMenu} className="nav-cta mobile">{t(lang as any, 'nav.cta')}</Link>
           </li>
+          <li>
+            <div className="mobile-social">
+              <a href="https://www.instagram.com/damascus_gin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61562533851090" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.tiktok.com/@damascusgin" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-tiktok"></i>
+              </a>
+              <a href="mailto:info@damascusgin.com" aria-label="Email">
+                <i className="fas fa-envelope"></i>
+              </a>
+            </div>
+          </li>
         </ul>
       </div>
     </>
