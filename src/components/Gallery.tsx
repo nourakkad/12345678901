@@ -17,101 +17,101 @@ const Gallery: React.FC = () => {
   }> = [
     {
       id: 1,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'Every bottle tells a story',
       image: '/images/gallery/Untitled-110.webp',
       category: 'experience'
     },
     {
       id: 2,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'A spirit born from heritage',
       image: '/images/gallery/Untitled16.webp',
       category: 'experience'
     },
     {
       id: 3,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'Celebrate in every pour',
       image: '/images/gallery/Untitled-9.webp',
       category: 'experience'
     },
     {
       id: 4,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'Pure Elegance',
       image: '/images/gallery/2.webp',
       category: 'experience'
     },
     {
       id: 5,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'Born Free',
       image: '/images/gallery/3.webp',
       category: 'experience'
     },
     {
       id: 6,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'A rose in every glass',
       image: '/images/gallery/6.webp',
       category: 'experience'
     },
     {
       id: 7,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'The beauty of spirit',
       image: '/images/gallery/1 (1).webp',
       category: 'experience'
     },
     {
       id: 8,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'GinGuide Award',
       image: '/images/gallery/PHOTO 1.jpeg',
       category: 'experience'
     },
     {
       id: 9,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'Spirit in bloom',
       image: '/images/gallery/PHOTO 2.jpeg',
       category: 'experience'
     },
     {
       id: 10,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'A journey to remember',
       image: '/images/gallery/PHOTO 3.jpeg',
       category: 'experience'
     },
     {
       id: 11,
-      title: 'Damascus Gin Experience',
-      description: 'The complete Damascus Gin experience and tasting',
+      title: 'Damascus<br/>Gin',
+      description: 'Made to shine everywhere',
       image: '/images/gallery/PHOTO 4.jpeg',
       category: 'experience'
     },
-    { id: 12, title: 'Damascus Gin Experience', 
-      description: 'The complete Damascus Gin experience and tasting', 
+    { id: 12, title: 'Damascus<br/>Gin', 
+      description: '', 
       video: '/images/gallery/VIDEO 1.mp4', 
       poster: '/images/gallery/clip2-poster.jpg', 
       category: 'experience' 
     },
-      { id: 13, title: 'Damascus Gin Experience', 
-      description: 'The complete Damascus Gin experience and tasting', 
+      { id: 13, title: 'Damascus<br/>Gin', 
+      description: '', 
       video: '/images/gallery/VIDEO 2.mp4', 
       poster: '/images/gallery/clip2-poster.jpg', 
       category: 'experience' 
     },
-    { id: 14, title: 'Damascus Gin Experience', 
-      description: 'The complete Damascus Gin experience and tasting', 
+    { id: 14, title: 'Damascus<br/>Gin', 
+      description: '', 
       video: '/images/gallery/VIDEO 3.mp4', 
       poster: '/images/gallery/clip2-poster.jpg', 
       category: 'experience' 
     },
-    { id: 15, title: 'Damascus Gin Experience', 
-      description: 'The complete Damascus Gin experience and tasting', 
+    { id: 15, title: 'Damascus<br/>Gin', 
+      description: '', 
       video: '/images/gallery/VIDEO 4.mp4', 
       poster: '/images/gallery/clip2-poster.jpg', 
       category: 'experience' 
@@ -187,7 +187,7 @@ const Gallery: React.FC = () => {
                   />
                 )}
                 <div className="gallery-item-overlay">
-                  <h3>{item.title}</h3>
+                  <h3 dangerouslySetInnerHTML={{ __html: item.title }} />
                   <p>{item.description}</p>
                 </div>
               </div>
