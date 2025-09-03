@@ -1,5 +1,5 @@
 .blog-post {
-  margin-top: 80px;
+  margin-top: 140px;
   background: #fafafa;
   min-height: 100vh;
 }
@@ -110,7 +110,7 @@
 
 .post-image {
   width: 100%;
-  height: 400px;
+  height: 650px;
   overflow: hidden;
   border-radius: 12px;
   margin-bottom: 3rem;
