@@ -95,7 +95,7 @@ const Cocktails: React.FC = () => {
           <Animated variant="left">
           <div className="recipe-left">
             <div className="recipe-header">
-              <h2 className="recipe-title">{t(lang, 'cocktails.page.intro.title')}</h2>
+            <h2 className="recipe-title" dangerouslySetInnerHTML={{ __html: t(lang, 'cocktails.page.intro.title') }}/>
             </div>
             <div className="journey-description">
               <p>{t(lang, 'cocktails.page.intro.p1')}</p>
