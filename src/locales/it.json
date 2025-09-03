@@ -1,12 +1,12 @@
 {
   "nav": {
-    "home": "Home",
+    "home": "Pagina iniziale",
     "ourStory": "La nostra storia",
     "gallery": "Galleria",
     "blog": "Blog",
     "awards": "Premi",
     "whereToBuy": "Dove acquistare",
-    "cta": "Cocktail Bliss"
+    "cta": "I nostri Cocktail"
   },
   "awards": {
     "comingSoon": "In arrivo",
@@ -62,105 +62,105 @@
     }
   },
   "cocktails": {
-    "heroTitle": "Cocktail Bliss",
+    "heroTitle": "I nostri Cocktail",
     "heroSubtitle": "Scopri i cocktail perfetti con Damascus Gin",
     "page": {
       "intro": {
-        "title": "Damascus Gin: Un viaggio in ogni sorso",
-        "p1": "Con Damascus Gin come musa, abbiamo creato quattro cocktail unici per celebrare il suo squisito blend di petali di rosa, ginepro, agrumi e pistacchio. Ogni drink rende omaggio ai ricchi paesaggi profumati di Siria e Libano, dove i sapori antichi incontrano la mixology moderna.",
-        "p2": "Immagina il Damascus Dream, un cocktail che stratifica delicatamente agrumi, spezie e calore con le note distintive di Damascus Gin, rifinito con un tocco di cannella e scorza d’arancia. Oppure prova il Damascus Gin Mojito, dove menta fresca e petali di rosa offrono un tocco rinfrescante al classico mojito, con eleganza mediorientale.",
-        "p3": "Per una bevanda più frizzante, il Sultan’s Spritz unisce le note floreali del gin a un accenno brillante di Aperol e arancia, perfetto da condividere. Per chi desidera un finale sofisticato, l’Oasis Breeze bilancia agrumi, vermouth e un tocco di rosa, promettendo un momento di calma ed eleganza.",
-        "p4": "Questi cocktail ti accompagnano in un viaggio sensoriale. Che tu stia condividendo con amici o godendoti un momento per te, ogni sorso è un assaggio di un altro mondo. E per semplificare, trovi qui le ricette da preparare a casa!",
+        "title": "Damascus Gin: Un Viaggio in Ogni Sorso",
+        "p1": "Ispirati dal Damascus Gin, abbiamo creato quattro cocktail unici per celebrare la sua squisita miscela di petali di rosa, ginepro, agrumi e pistacchio. Ogni bevanda rende omaggio ai ricchi e profumati paesaggi di Siria e Libano, evocando un senso di luogo e tradizione, dove i sapori antichi incontrano la mixologia moderna.",
+        "p2": "Immagina il 'Sogno di Damasco' , un cocktail che combina delicatamente agrumi, spezie e calore con le note distintive del Damascus Gin, completato con un tocco di cannella e scorza d'arancia. È come trascorrere un pomeriggio nel cuore di un mercato di spezie, vibrante di colori e profumi.",
+        "p3": "Prova anche il Mojito al Damascus Gin, dove la freschezza della menta e i petali di rosa danno un tocco rinfrescante al classico mojito, infondendolo con un'eleganza mediorientale. Per qualcosa di più frizzante, lo Spritz del Sultano combina le sfumature floreali della ginebra con un accento brillante di Aperol e arancia, creando un cocktail ideale da condividere. E per chi cerca un finale sofisticato, la 'Breza dell'Oasi' bilancia agrumi, vermouth e un tocco di rosa, promettendo un momento di calma ed eleganza. ",
+        "p4": "Questi cocktail sono creati per portarti in un viaggio sensoriale, con ogni sorso che cattura l'essenza del nostro Damascus Gin. Che sia condiviso con amici o gustato in un momento per te, ogni bevanda è un assaggio di un'altra cultura, un sorso alla volta. E per renderlo ancora più semplice, abbiamo le ricette qui per provarli a casa!",
         "overlayTitle": "Cocktail d’autore",
         "overlaySubtitle": "Scopri quattro ricette uniche con Damascus Gin"
       },
       "common": {
-        "ingredients": "Ingredienti",
+        "ingredients": "Ingredienti ",
         "ingredientsLabel": "Ingredienti :",
         "instructions": "Istruzioni",
         "tips": "Consigli"
       },
       "dream": {
-        "title": "Damascus Dream",
+        "title": "Sogno di Damasco ",
         "category": "Cocktail d’autore",
         "overlaySubtitle": "Un viaggio tra spezie e agrumi",
         "ingredients": [
-          "40 ml Damascus Gin (infuso con petali di rosa, ginepro, pompelmo e pistacchio)",
-          "15 ml Amaretto",
-          "10 ml succo d’arancia fresco",
-          "10 ml succo di limone fresco",
-          "10 ml sciroppo semplice",
-          "Ghiaccio",
-          "Guarnizione: scorza d’arancia e bastoncino di cannella"
+          "40 ml di Damascus Gin",
+          "15 ml di Amaretto",
+          "10 ml di succo di arancia fresco",
+          "10 ml di succo di limone fresco",
+          "10 ml di sciroppo semplice o zucchero",
+          "Cubetti di ghiaccio",
+          "Decorazione: Scorza d'arancia e una stecca di cannella"
         ],
         "instructions": [
-          "In uno shaker, aggiungi gin, Amaretto, succo d’arancia, succo di lime e sciroppo semplice.",
-          "Riempi con ghiaccio e agita 15–20 secondi fino a raffreddare.",
-          "Filtra in un bicchiere con ghiaccio fresco.",
-          "Guarnisci con scorza d’arancia e bastoncino di cannella."
+          "In uno shaker, aggiungi il Damascus Gin, l'Amaretto, il succo di arancia, il succo di limone e lo sciroppo.",
+          "Riempi lo shaker con ghiaccio e agita per circa 15–20 secondi, fino a che la miscela non è ben fredda.",
+          "Filtra in un bicchiere a coppa pieno di ghiaccio fresco.",
+          "Decora con la scorza d'arancia e una stecca di cannella per aggiungere una nota aromatica."
         ],
         "tips": "Usa agrumi freschi e ghiaccio di qualità. L’equilibrio tra spezie calde e agrumi esalta il carattere unico di Damascus Gin."
       },
       "mojito": {
-        "title": "Damascus Gin Mojito",
+        "title": "Mojito con Damascus Gin",
         "category": "Classico rivisitato",
         "overlaySubtitle": "Eleganza mediorientale con freschezza classica",
         "ingredients": [
-          "50 ml Damascus Gin (infuso con petali di rosa, ginepro, pompelmo e pistacchio)",
-          "20 ml succo di lime fresco",
-          "15 ml sciroppo semplice (a piacere)",
+          "50 ml di Damascus Gin",
+          "20 ml di succo di lime fresco",
+          "15 ml di sciroppo di zucchero (aggiustare a piacere)",
           "6–8 foglie di menta fresca",
           "Soda",
-          "Ghiaccio",
-          "Guarnizione: scorza di lime, menta fresca e petali di rosa"
+          "Cubetti di ghiaccio",
+          "Decorazione: Scorza di lime, un rametto di menta fresca e petali di rosa"
         ],
         "instructions": [
-          "Nello shaker, pesta delicatamente la menta con succo di lime e sciroppo per liberare gli aromi senza amarezza.",
-          "Aggiungi gin e ghiaccio, poi agita fino a raffreddare.",
-          "Filtra in un tumbler alto con ghiaccio fresco.",
-          "Completa con soda.",
-          "Guarnisci con scorza di lime, menta e petali di rosa."
+          "In uno shaker, mescola delicatamente le foglie di menta con il succo di lime e lo sciroppo per liberare l'aroma della menta, facendo attenzione a non schiacciarle troppo per evitare che diventino amare.",
+          "Aggiungi la ginebra e il ghiaccio, quindi agita bene fino a che il mix non sarà ben freddo.",
+          "Filtra in un bicchiere alto pieno di ghiaccio fresco.",
+          "Completa con soda per un tocco fresco e frizzante.",
+          "Decora con scorza di lime, un rametto di menta fresca e qualche petalo di rosa per un tocco ispirato a Damasco."
         ],
         "tips": "La chiave è pestare delicatamente la menta. I petali di rosa aggiungono un tocco unico mediorientale."
       },
       "sultan": {
-        "title": "The Sultan’s Spritz",
+        "title": "Spritz del Sultano ",
         "category": "Social",
         "overlaySubtitle": "Lusso e celebrazione in ogni sorso",
         "ingredients": [
-          "50 ml Damascus Gin",
-          "50 ml Aperol",
-          "40 ml succo d’arancia fresco",
-          "Soda",
-          "Guarnizione: scorza d’arancia"
+          "50 ml di Damascus Gin",
+          "50 ml di Aperol",
+          "40 ml di succo di arancia fresco",
+          "Club Soda",
+          "Decorazione: Una fetta di arancia"
         ],
         "instructions": [
-          "In un calice con ghiaccio, unisci gin, Aperol e succo d’arancia.",
-          "Mescola delicatamente.",
-          "Completa con soda a piacere.",
-          "Guarnisci con scorza d’arancia."
+          "In un calice da vino riempito di ghiaccio, unisci la ginebra, l'Aperol e il succo di arancia fresco.",
+          "Mescola delicatamente per amalgamare i sapori.",
+          "Completa con soda a seconda dell'intensità desiderata.",
+          "Decora con una fetta di arancia per un aroma fresco e vibrante."          
         ],
         "tips": "Uno spritz sofisticato da condividere. Il floreale del gin con l’amaro dell’Aperol crea un’esperienza elegante e rinfrescante."
       },
       "oasis": {
-        "title": "Oasis Breeze",
+        "title": "Brezza dell’oasi ",
         "category": "Rinfrescante",
         "overlaySubtitle": "Calma ed eleganza in ogni sorso",
         "ingredients": [
-          "45 ml Damascus Gin (infuso con petali di rosa, ginepro, pompelmo e pistacchio)",
-          "15 ml vermouth dry (o vermouth dolce)",
-          "20 ml succo di limone fresco",
-          "15 ml sciroppo semplice",
-          "Ghiaccio",
-          "Opzionale: soda o tonica",
-          "Guarnizione: scorza di limone e petali di rosa"
+          "45 ml di Damascus Gin",
+          "15 ml di vermut secco (per un cocktail più secco) o vermut dolce (per un cocktail più dolce)",
+          "20 ml di succo di limone fresco",
+          "15 ml di sciroppo semplice o zucchero",
+          "Cubetti di ghiaccio",
+          "Opzionale: Club soda o acqua tonica",
+          "Decorazione: Scorza di limone e petali di rosa"
         ],
         "instructions": [
-          "Nello shaker con ghiaccio, aggiungi gin, vermouth, succo di limone e sciroppo.",
-          "Agita 15–20 secondi fino a raffreddare.",
-          "Filtra in una coppa fredda.",
-          "Per allungare, aggiungi un goccio di soda o tonica.",
-          "Guarnisci con scorza di limone e petali di rosa."
+          "In uno shaker pieno di ghiaccio, aggiungi la ginebra, il vermut, il succo di limone, lo sciroppo semplice e gli bitter all'arancia.",
+          "Agita bene per 15-20 secondi fino a quando il mix non sarà ben freddo.",
+          "Filtra in una coppa da cocktail fredda.",
+          "Aggiungi un tocco di soda o acqua tonica.",
+          "Decora con scorza di limone e qualche petalo di rosa per una presentazione sofisticata."
         ],
         "tips": "Delicato ed equilibrato: agrumi, vermouth e un tocco di rosa per un’esperienza sofisticata e rinfrescante."
       }
@@ -221,28 +221,28 @@
   },
   "home": {
     "about": {
-      "text": "Damascus Gin unisce ingredienti iconici di Siria e Libano per un gusto unico e un'esperienza memorabile. Nato dalla passione di un gruppo di amici, è distillato a Wata El Joz, Chateau Bybline, in Monte Libano."
+      "text": "Damascus Gin unisce ingredienti iconici di Siria e Libano per creare un gusto unico e un’esperienza indimenticabile. Nato dalla passione di un gruppo di amici amanti del gin, cattura la magia dei luoghi che hanno visitato e in cui hanno vissuto. Damascus Gin viene distillato presso una cantina a Wata El Joz, Chateau Bybline, nel Monte Libano, incarnando lo spirito del Medio Oriente."
     },
     "ingredients": {
-      "rose": "Rosa di Damasco: dal profumo incantevole e riconosciuta dall'UNESCO.",
-      "lemon": "Pomelo: dona una nota agrumata fresca e vivace.",
-      "pistachio": "Pistacchio di Aleppo: sapore ricco e tostato con un tocco di dolcezza.",
-      "juniper": "Ginepro: dalle montagne del Libano, regala le classiche note resinose."
+      "rose": "Rosa di Damasco: Celebre per il suo profumo incantevole, è aromatica e riconosciuta dall'UNESCO come parte del Patrimonio Culturale Immateriale in Siria, rendendola un ingrediente significativo e prezioso.",
+      "lemon": "Agrumi del Libano: Aggiungono un elemento vivace e agrumato al gin, arricchendo il profilo aromatico con un tocco rinfrescante.",
+      "pistachio": "Pistacchio di Aleppo: Rinomato per il suo sapore ricco e nocciolato, con una nota di dolcezza, questa varietà di pistacchio è più intensa rispetto alle altre, aggiungendo una profondità e una complessità uniche al gin.",
+      "juniper": "Ginepro: Ricavato dagli alberi di ginepro siriani situati sul Monte Libano, queste bacche sono un botanico fondamentale nel gin di Damasco, conferendo le classiche note resinose e di pino che caratterizzano il gusto tipico del gin."
     },
     "unique": {
-      "title": "PERCHÉ DAMASCUS GIN È UNICO",
-      "card1": "Gin unico grazie alla fusione di botaniche siriane e libanesi selezionate dal Master Distiller Joseph.",
-      "card2": "Qualità eccezionale a partire da ingredienti rari come Rosa di Damasco e Pistacchio di Aleppo.",
-      "card3": "Produzione artigianale: ogni bottiglia è numerata e sigillata con ceralacca in un cofanetto elegante."
+      "title": "Perché Damascus Gin è unico",
+      "card1": "Il gin Damascus è davvero unico e si distingue per la fusione di ingredienti classici provenienti dalla Siria e dal Libano, curati meticolosamente sotto la guida esperta del Maestro Distillatore Joseph. ",
+      "card2": "L'eccezionale qualità del gin inizia con i suoi ingredienti, tra cui botaniche organiche e rare come la Rosa di Damasco e il Pistacchio di Aleppo. Questi ingredienti sono accuratamente selezionati per creare un sapore ricco e corposo che distingue Damascus Gin dagli altri.",
+      "card3": "Grazie a un processo di produzione artigianale, ogni bottiglia è numerata singolarmente e sigillata con una chiusura in cera unica e un'etichetta originale, con una confezione e un design eleganti. Un regalo o un souvenir perfetto per assaporare il gusto del Levante, celebrando il ricco patrimonio culturale di Damasco, una delle città più antiche del mondo."
     },
     "essence": {
-      "title": "L'essenza di Damasco",
-      "desc": "Catturiamo la vera essenza di Damasco — storia, cultura e artigianalità.",
+      "title": "L'esenza del Levante",
+      "desc": "Un gin realizzato con rosa di Damasco, pistacchio di Aleppo, ginepro siriano, agrumi libanesi e acqua dolce del Monte Libano.Nel cuore del Levante, dove le storie di Siria e Libano si sono legate, nasce un gin unico, infuso con sostanze botaniche che raccontano la storia di queste terre ricche di storia. Ogni ingrediente è un tributo al ricco patrimonio culturale e naturale, che cattura lo spirito di antiche tradizioni e l'essenza del Mediterraneo.",
       "cta": "Scopri la nostra storia"
     },
     "symphony": {
       "title": "Una sinfonia di sapori",
-      "desc": "Come una sinfonia perfetta, uniamo le migliori botaniche in armonia."
+      "desc": "Il nostro gin è una sinfonia di questi squisiti ingredienti, ognuno dei quali racconta una parte della grande storia della Siria e del Libano. Le note floreali della rosa di Damasco, il calore delle nocciole del pistacchio di Aleppo, l'essenza pungente del ginepro siriano coltivato nel Monte Libano, la luminosità degli agrumi libanesi e la pura limpidezza dell'acqua del Monte Libano si uniscono per creare uno spirito complesso e armonioso."
     },
     "news": {
       "readMore": "LEGGI DI PIÙ",
@@ -256,8 +256,8 @@
     },
     "contact": {
       "title": "Damascus Gin",
-      "subtitle": "Un gusto di Siria e Libano",
-      "desc": "Damascus Gin unisce ingredienti iconici di Siria e Libano.",
+      "subtitle": "- Un gusto di Siria e Libano",
+      "desc": "Damascus Gin combina ingredienti iconici della Siria e del Libano.",
       "formTitle": "Contattaci",
       "email": "Email",
       "message": "Inserisci il tuo messaggio",
@@ -266,9 +266,9 @@
   },
   "ourStory": {
     "section1": {
-      "title": "Artigianalità libanese in Damascus Gin",
-      "subtitle": "Un'amicizia globale in una bottiglia",
-      "paragraph": "Nel 2022, tre amici da diverse parti del mondo hanno unito il loro sogno. Con una profonda connessione con Damasco, gli amici hanno cercato di fondere lo spirito di questa città storica con l'autenticità e l'artigianalità dei liquori libanesi. Dopo mesi di discussioni, test e collaborazione, è nato Damascus Gin."
+      "title": "Artigianato Libanese nel Damascus Gin",
+      "subtitle": "Un'Amicizia Speciale  in una Bottiglia",
+      "paragraph": "Nel 2022, tre amici provenienti da diverse parti del mondo hanno unito i loro sogni. Con una profonda connessione con Damasco, questi amici cercavano di fondere lo spirito di questa città storica con l'autenticità e l'arte dei liquori libanesi. Dopo mesi di conversazioni, prove e duro lavoro, è nato il Damascus Gin."
     },
     "section3": {
       "emphasis": "Per creare l'identità di Damascus Gin, il nostro obiettivo era elaborare una miscela unica che potesse creare un'esperienza straordinaria ad ogni sorso. Infondere il gin con ingredienti esotici e naturali come la Rosa di Damasco e il Pistacchio di Aleppo gli conferisce il suo carattere unico.",

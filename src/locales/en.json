@@ -65,11 +65,11 @@
     "heroSubtitle": "Discover the perfect cocktails with Damascus Gin",
     "page": {
       "intro": {
-        "title": "Damascus Gin:<br/>A Journey in Every Sip",
-        "p1": "With Damascus Gin as our muse, we’ve created four unique cocktails to celebrate its exquisite blend of rose petals, juniper, citrus and pistachio. Each drink pays tribute to the rich, fragrant landscapes of Syria and Lebanon, evoking a sense of place and tradition, where ancient flavours meet modern mixology.",
-        "p2": "Imagine the Damascus Dream, a cocktail that delicately layers citrus, spice, and warmth with the distinctive notes of Damascus Gin, finished with a touch of cinnamon and orange zest. It’s like an evening in the heart of a spice market, alive with colour and aroma. Or taste the Damascus Gin Mojito, where fresh mint and rose petals offer a refreshing twist on the classic mojito, infusing it with Middle Eastern elegance.",
-        "p3": "For a more effervescent drink, the Sultan’s Spritz combines the gin’s floral undertones with a bright hint of Aperol and orange, creating a cocktail perfect for sharing. And for those who crave a sophisticated finish, the Oasis Breeze balances citrus, vermouth, and a touch of rose, promising a moment of calm and elegance.",
-        "p4": "These cocktails are created to take you on a sensory journey, with each sip taking the essence of our Damascus Gin. Whether you’re sharing with friends or enjoying a moment to yourself, each drink is a taste of another world, one sip at a time. And to make it easy, we have the recipes right here for you to try at home!",
+        "title": "Damascus Gin: A Journey in Every Sip",
+        "p1": "With Damascus Gin as our muse, we’ve created four unique cocktails to celebrate its exquisite blend of rose petals, juniper, citrus and pistachio. Each drink pays tribute to the rich, fragrant landscapes of Syria and Lebanon, evoking a sense of place and tradition, where ancient flavours meet modern mixology. Imagine the Damascus Dream, a cocktail that delicately layers citrus, spice, and warmth with the distinctive notes of Damascus Gin, finished with a touch of cinnamon and orange zest. ",
+        "p2": "It’s like an evening in the heart of a spice market, alive with colour and aroma. Or taste the Damascus Gin Mojito, where fresh mint and rose petals offer a refreshing twist on the classic mojito, infusing it with Middle Eastern elegance.",
+        "p3": "For a more effervescent drink, the Sultan’s Spritz combines the gin’s floral undertones with a bright hint of Aperol and orange, creating a cocktail perfect for sharing. And for those who crave a sophisticated finish, the Oasis Breeze balances citrus, vermouth, and a touch of rose, promising a moment of calm and elegance. These cocktails are created to take you on a sensory journey, with each sip taking the essence of our Damascus Gin. ",
+        "p4": "Whether you’re sharing with friends or enjoying a moment to yourself, each drink is a taste of another world, one sip at a time. And to make it easy, we have the recipes right here for you to try at home!",
         "overlayTitle": "Signature Cocktails",
         "overlaySubtitle": "Explore four unique recipes crafted around Damascus Gin"
       },
@@ -223,25 +223,25 @@
       "text": "Damascus Gin blends iconic ingredients from Syria and Lebanon to create a unique taste and a memorable experience. Born from the passion of a group of friends who love gin, it captures the magic of the places they’ve visited and lived. Damascus Gin is distilled at a winery in Wata El Joz, Chateau Bybline, in Mount Lebanon, embodying the spirit of the Middle East."
     },
     "ingredients": {
-      "rose": "Damascus Rose: Celebrated for its enchanting fragrance, recognized by UNESCO as part of Syria’s Intangible Cultural Heritage.",
-      "lemon": "Pomelo: Adds a bright, zesty citrus note that lifts the gin’s flavor and aroma.",
-      "pistachio": "Aleppo Pistachio: Renowned for its rich, nutty flavor with a hint of sweetness, adding unique depth and complexity.",
-      "juniper": "Juniper: Sourced from Syrian juniper trees in Mount Lebanon, delivering the classic piney notes that define gin."
+      "rose": "Damascus Rose: Celebrated for its enchanting fragrance, it is aromatic and also recognized by UNESCO as part of the Intangible Cultural Heritage in Syria, making it a significant and cherished ingredient.",
+      "lemon": "Citrus from Lebanon: adding a bright, zesty element to the gin and enhancing the flavor profile with a refreshing touch.",
+      "pistachio": "Aleppo Pistachio: Renowned for its rich, nutty flavor with a hint of sweetness, this pistachio variety is more intense than others, adding a unique depth and complexity to the gin.",
+      "juniper": "Juniper: Sourced from Syrian juniper trees located in Mount Lebanon, these berries are a cornerstone botanical in Damascus gin, imparting the classic piney and resinous notes that define gin's signature taste."
     },
     "unique": {
       "title": "WHY DAMASCUS GIN IS UNIQUE",
-      "card1": "Damascus Gin is a unique spirit, distinguished by the fusion of classic botanicals from Syria and Lebanon, carefully selected under the expert guidance of Master Distiller Joseph.",
-      "card2": "Exceptional quality starts with ingredients, including rare organics like Damascus Rose and Aleppo Pistachio. Each is meticulously selected for a rich, full-bodied flavor.",
-      "card3": "Through artisanal production, every bottle is individually numbered and wax-sealed in an elegant case—perfect as a gift or to savor the flavors of the Levant."
+      "card1": "Damascus Gin is truly unique, distinguished by its fusion of classic ingredients from Syria and Lebanon, meticulously curated under the expert guidance of Master Distiller Joseph. ",
+      "card2": "The gin’s exceptional quality begins with its ingredients, including organic and rare botanicals like Damascus Rose and Aleppo Pistachio. These ingredients are carefully sourced to create a rich and full bodied flavor that sets Damascus Gin apart from others.",
+      "card3": "Through a handcrafted production process each bottle is individually numbered and sealed with a unique wax closure and original label, with elegant packaging and design. A perfect gift or souvenier to enjoy the taste of the Levant, celebrating the rich cultural heritage of Damascus, one of the world’s oldest cities."
     },
     "essence": {
-      "title": "The Essence of Damascus",
-      "desc": "Our gin captures the very essence of Damascus—its rich history, vibrant culture, and unparalleled craftsmanship.",
+      "title": "The Essence of Levant",
+      "desc": "A Gin Crafted with Damascus Rose, Aleppo Pistachio, Syrian Juniper, Lebanese citrus, and Fresh Water from Mount Lebanon In the heart of the Levant, where the histories of Syria and Lebanon connected, a unique gin emerges, infused with botanicals that tell the tale of these storied lands. Each ingredient is a tribute to the rich cultural and natural heritage, capturing the spirit of ancient traditions and the essence of the Mediterranean.",
       "cta": "Learn Our Story"
     },
     "symphony": {
       "title": "A Symphony of Flavors",
-      "desc": "Like a perfectly orchestrated symphony, our gin brings together the finest botanicals in harmony to create a masterpiece of taste and aroma."
+      "desc": "Our gin is a symphony of these exquisite ingredients, each telling a part of the grand narrative of Syria and Lebanon. The floral notes of Damascus rose, the nutty warmth of Aleppo pistachio, the piney essence of Syrian Juniper grown in mount of Lebanon, the brightness of Lebanese citrus, and the pure clarity of Mount Lebanon’s water come together to create a spirit that is both complex and harmonious."
     },
     "news": {
       "readMore": "READ MORE",
@@ -276,8 +276,8 @@
       "paragraph": "In 2022, three friends from different parts of the world united their dream. With a deep connection to Damascus, the friends aimed to blend the spirit of this historical city with the authenticity and craftsmanship of Lebanese liquors. After months of discussions, testing, and collaboration, Damascus gin was born."
     },
     "section3": {
-      "emphasis": "For creating the Identity of Damascus gin our goal was to craft a unique blend that could create an extraordinary experience with every sip. Infusing the gin with exotic and natural ingredients like Damascus Rose and Aleppo Pistachio gives it its unique character.",
-      "detail": "We also wanted the gin to reflect the natural beauty and the rich heritage of the Middle East. Each bottle honors the deep history of Damascus, one of the world's oldest cities. Blending tradition and innovation, with locally sourced ingredients and handcrafted distillation, Damascus gin is a timeless and unmatched spirit."
+      "emphasis": "For creating the Identity of Damascus gin our goal was to craft a unique blend that could create an extraordinary experience with every sip. Infusing the gin it with exotic and natural ingredients like Damascus Rose and Aleppo Pistachio gives it its unique character.",
+      "detail": "We also wanted the gin to reflect the natural beauty and the rich heritage of the Middle East. Each bottle honors the deep history of Damascus, one of the world’s oldest cities. Blending tradition and innovation, with locally sourced ingredients and handcrafted distilliation, Damascus gin is a timeless and unmatched spirit."
     }
   }
 }
